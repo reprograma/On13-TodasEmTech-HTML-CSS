@@ -360,11 +360,11 @@ nome-do-bloco__nome-do-elemento--modificador
 ```
 * Estilo CamelCase (inicia com a letra minúscula)
 ```
-nomeDoBloco_NomeDoElemento__NomeDoModificador_valorDoModificador
+blockName-elemName_modName_modVal
 ```
 * Estilo React (inicia com a letra maíuscula)
 ```
-NomeDoBloco_NomeDoElemento_nomeDoModificador_valorDoModificador
+BlockName-ElemName_modName_modVal
 ```
 * Seu sistema de nomenclatura
 

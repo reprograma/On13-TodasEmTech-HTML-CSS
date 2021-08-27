@@ -345,7 +345,7 @@ Fonte: en.bem.info/methodology
 ```
 <div class="card">
   <p class="card__paragrafo">Este é um parágrafo</p>
-  <p class="card__paragrafo card__paragrafo--vermelho">Este é um parágrafo vermelho</p>
+  <p class="card__paragrafo card__paragrafo_vermelho">Este é um parágrafo vermelho</p>
 </div>
 ```
 

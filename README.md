@@ -405,7 +405,7 @@ Esta tag pode receber alguns atributos específicos como o atributo **method**, 
 |label                       | Tag de rótulo/legenda para um campo do form                                              |
 |textarea                    | Campo de entrada para texto de várias linhas                                             |
 |fieldset                    | Difine um grupo de campos                                                                |
-|legend                      | Título para um comjunto de campos                                                        |
+|legend                      | Título para um conjunto de campos                                                        |
 |select                      | Define uma lista de opções selecionáveis                                                 |
 |option                      | Define cada opção dentro do select                                                       |
 

@@ -345,7 +345,7 @@ Fonte: en.bem.info/methodology
 ```
 <div class="card">
   <p class="card__paragrafo">Este é um parágrafo</p>
-  <p class="card__paragrafo card__paragrafo--vermelho">Este é um parágrafo vermelho</p>
+  <p class="card__paragrafo card__paragrafo_vermelho">Este é um parágrafo vermelho</p>
 </div>
 ```
 
@@ -360,11 +360,11 @@ nome-do-bloco__nome-do-elemento--modificador
 ```
 * Estilo CamelCase (inicia com a letra minúscula)
 ```
-nomeDoBloco_NomeDoElemento__NomeDoModificador_valorDoModificador
+blockName-elemName_modName_modVal
 ```
 * Estilo React (inicia com a letra maíuscula)
 ```
-NomeDoBloco_NomeDoElemento_nomeDoModificador_valorDoModificador
+BlockName-ElemName_modName_modVal
 ```
 * Seu sistema de nomenclatura
 

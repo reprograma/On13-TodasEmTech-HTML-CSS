@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(116,44,126,0.5), rgba(167,92,204, 0.7)), url(./../img/background.jpg) no-repeat;
+    background-size: cover;
+}
+.menu {
+    width: 100%;
+    background-color: #a36f9c;
+    display: flex; 
+    justify-content:space-between; 
+    height: 60px;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+}
+.menu__logo{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    
+}
+.menu-navigation {
+    display: flex;
+    list-style: none;
+}
+.menu-navigation__link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+
+}
+.banner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.banner__title{
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.banner__subtitle{
+    color: #ffffff;
+    font-size: 20px;
+}
+main{
+    width: 100%;
+    background-color: rgb(243,239,239);
+}
+.card-introduction{
+    width: 80%;
+    padding: 4%;
+}
+
+.card-introduction__title{
+    color: rgb(162,153,165);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container-text{
+    display: flex;
+}
+
+.container-text__paragraph p{
+    color: rgb(41, 39, 39);
+    font-size: 17px;
+    margin-bottom: 17px;
+}
+
+.container-text__image{
+    width: 30%;
+}
+
+.container-trajetoria__titulo{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #502f4c;
+}
+
+.card-gostos__titulo{
+    font-size: 25px;
+    color: #20171f;
+    margin-bottom: 30px;
+}
+
+.container-listas{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.lista{
+    width: 30%;
+    background-color: #A866AD;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.lista h3{
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lista__item li{
+    color: #ffffff;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.lista__item li::before{
+    content: "❤";
+    margin-right: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #a36f9c;
+}

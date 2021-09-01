@@ -109,12 +109,22 @@ main{
   margin: 0px 50px;
   text-align: center;
 }
-
+label {
+    font-size: 20px;
+    color:white;
+}
 form input:not(:last-child) {
     width: 30vh;
+    border-radius: 10px;
+    border-color: none;
 }
 form input[type="button"]{
-    background-color: chartreuse;
+    background-color: #E5BC30;
+    border-color: none;
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 10px;
+    margin-left: 20px;
 }
 
 

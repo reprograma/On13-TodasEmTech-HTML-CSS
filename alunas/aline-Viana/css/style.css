@@ -139,6 +139,10 @@ main{
     content: "❤";
     margin-right: 10px;
 }
+.bannerMovie {
+    width: 200px;
+    height: 300px;
+}
 
 footer{
     text-align: center;

@@ -1,113 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Aqui vai ser incluída informações não visíveis ao usuário -->
-        <meta charset="UTF-8">
-        <title> Locadora de filmes da {Reprograma}</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,200;1,700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Aqui vai ser incluída informações visíveis ao usuário -->
-        <header class="cabecalho">
 
-            <nav class="menu">
-                <a href="" class="menu__logo">{ }</a>
-                <ul class="menu-navegacao">
-                    <li><a href="#" class="menu-navegacao__link">Lançamentos</a></li>
-                    <li><a href="#" class="menu-navegacao__link">Clássicos</a></li>
-                    <li><a href="#" class="menu-navegacao__link"> 5 estrelas</a></li>
-                </ul>
-            </nav>
-        
-            <div class="banner" >
-                <h1 class="banner__titulo" >Olá, seja bem vindo(a) a minha locadora</h1>
-                <p class="banner__subtitulo" >Aqui você encontra todos os tipos de filmes, desde os antigões aos atuais.</p> 
+<head>
+    <!-- Aqui vai ser incluída informações não visíveis ao usuário -->
+    <meta charset="UTF-8">
+    <title> Locadora de filmes da {Reprograma}</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,200;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+    <header class="cabecalho">
+
+        <nav class="menu">
+            <a href="" class="menu__logo">{ }</a>
+            <ul class="menu-navegacao">
+                <li><a href="#" class="menu-navegacao__link">Lançamentos</a></li>
+                <li><a href="#" class="menu-navegacao__link">Clássicos</a></li>
+                <li><a href="#" class="menu-navegacao__link"> 5 estrelas</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+            <h1 class="banner__titulo">Olá, seja bem vindo(a) a minha locadora</h1>
+            <p class="banner__subtitulo">Aqui você encontra todos os tipos de filmes, desde os antigões aos atuais.</p>
+        </div>
+
+    </header>
+    <main>
+        <section class="card-introducao">
+            <h2 class="card-introducao__titulo">Sobre a Locadora</h2>
+            <div class="container-texto">
+                <div class="container-texto__paragrafos">
+                    <p>É considerada história de Teixeira Santana, sendo uma das poucas locadoras ainda viva. Escolhemos
+                        nos manter, porque a história dos filmes são ricas. </p>
+                    <p>E tem filmes que nenhum stream tem, somente nós.</p>
+                    <p>Nosso endereço é na Rua marajô queiroz, 3030. Atuamos também pelo número (55) 89799998 :)</p>
+                </div>
+                <img src="img/popcorn.png" alt="Menina segurando o globo" class="container-texto__imagem">
+            </div>
+        </section>
+        <section class="container-trajetoria">
+            <h2 class="container-trajetoria__titulo">Deixo teu contato para te mandarmos o nosso catalógo</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text">
+                <label for="email">Email</label>
+                <input type="email">
+                <label for="phone">Telefone</label>
+                <input type="number">
+                <label for="send">Enviar</label>
+                <input type="button" value="Enviar">
+
+            </form>
+
+        </section>
+        <section class="card-gostos">
+            <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
+            <div class="container-listas">
+                <div class="lista">
+                    <h3>Amo viajar, e tenho uma listinha de quais países quero conhecer:</h3>
+                    <img src="img/content_pic.jpg" class="bannerMovie" alt="">
+                    </ul>
+                </div>
+                <div class="lista">
+                    <h3>Amo ouvir música. Confira as minhas musicas favoritas:</h3>
+                    <img src="img/MV5BNWE1ZGE5Y2QtYWE4Yi00YjM0LThhNWYtMWM1OGJjNDU3YzMyXkEyXkFqcGdeQXVyMTAzMDg4NzU0._V1_.jpg"
+                        class="bannerMovie" alt="">
+
+                </div>
+                <div class="lista">
+                    <h3>Amo ler, e esses são os meus livros preferidos:</h3>
+                    <ul class="lista__item">
+                        <img src="img/BEM2.jpg" class="bannerMovie" alt="">
+                    </ul>
+
+                </div>
             </div>
 
-        </header>
-        <main>
-            <section class="card-introducao">
-                <h2 class="card-introducao__titulo">Sobre a Locadora</h2>
-                <div class="container-texto">
-                    <div class="container-texto__paragrafos">
-                        <p>É considerada história de Teixeira Santana, sendo uma das poucas locadoras ainda viva. Escolhemos nos manter, porque a história dos filmes são ricas. </p>
-                        <p>E tem filmes que nenhum stream tem, somente nós.</p>
-                        <p>Nosso endereço é na Rua marajô queiroz, 3030. Atuamos também pelo número (55) 89799998 :)</p>
-                    </div>
-                    <img src="./img/menina-globo.png" alt="Menina segurando o globo" class="container-texto__imagem">
-                </div>
-            </section>
-            <section class="container-trajetoria">
-                <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a minha trajetória nessa vida...</h2>
-                <div class="container-trajetoria__paragrafo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium culpa, sequi, doloribus totam quo ipsa laborum, alias error cumque nisi temporibus? Laborum ea dignissimos neque adipisci tenetur fugiat nostrum optio?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit delectus aspernatur, esse, doloremque animi nihil vel quia eum nulla voluptatibus in temporibus? Doloribus illum, sequi ea aliquid nisi ratione voluptate?</p>
-    
-                </div>
+        </section>    
+    </main>
+    <footer>
+        <p>Site desenvolvido por Aline Viana - Aula {Reprograma} | © Copyright 2021</p>
+    </footer>
 
-            </section>
-            <section class="card-gostos">
-                <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
-                <div class="container-listas">
-                    <div class="lista">
-                        <h3>Amo viajar, e tenho uma listinha de quais países quero conhecer:</h3>
-                        <ul class="lista__item">
-                            <li>pais 1</li>
-                            <li>pais '2</li>
-                            <li>pais 3</li>
-                            <li>pais 4</li>
-                            <li>pais 5</li>
-                        </ul>
-                    </div>
-                    <div class="lista">
-                        <h3>Amo ouvir música. Confira as minhas musicas favoritas:</h3>
-                        <ul class="lista__item">
-                            <li>música 1</li>
-                            <li>música 2</li>
-                            <li>música 3</li>
-                            <li>música 4</li>
-                            <li>música 5</li>
-                        </ul>
+</body>
 
-                    </div>
-                    <div class="lista">
-                        <h3>Amo ler, e esses são os meus livros preferidos:</h3>
-                        <ul class="lista__item">
-                            <li>Livro 1</li>
-                            <li>Livro 2</li>
-                            <li>Livro 3</li>
-                            <li>Livro 4</li>
-                            <li>Livro 5</li>
-                        </ul>
-
-                    </div>
-                </div>
-
-            </section>
-            <section>
-                <h2>Explicando os display</h2>
-
-                <h3>Display inline</h3>
-
-                <div class="display-inline">
-                    <div>caixa 1</div>
-                    <div>caixa 2</div>
-                    <div>caixa 3</div>
-                </div>
-
-                <h4>Display block</h4>
-                <div class="display-block">
-                    <div>caixa 1</div>
-                    <div>caixa 2</div>
-                    <div>caixa 3</div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>Site desenvolvido por Aline Viana - Aula {Reprograma} | © Copyright 2021</p>
-        </footer>
-        
-    </body>
 </html>

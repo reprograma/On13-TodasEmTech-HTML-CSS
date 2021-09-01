@@ -100,8 +100,23 @@ main{
 .container-trajetoria__titulo{
     font-size: 25px;
     margin-bottom: 30px;
-    color: #502f4c;
+    color: #f5f5f5;
 }
+.container-trajetoria {
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #073d69;
+  margin: 0px 50px;
+  text-align: center;
+}
+
+form input:not(:last-child) {
+    width: 30vh;
+}
+form input[type="button"]{
+    background-color: chartreuse;
+}
+
 
 .card-gostos__titulo{
     font-size: 25px;
@@ -128,8 +143,15 @@ main{
     margin-bottom: 20px;
 }
 
-.sinopse, .sinopseMovie, .movieName {
+.sinopse, .sinopseMovie, .movieName, footer {
     color: white;
+}
+.movieName {
+    font-size: 20px;
+    text-align: center;
+}
+.sinopseMovie {
+    text-align: justify;
 }
 
 .bannerMovie {

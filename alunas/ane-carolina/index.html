@@ -20,9 +20,9 @@
             <nav class= "menu">
                 <a href= "" class="menu__logo">    { }  </a>
                 <ul class="menu-navegacao"> 
-                    <li> <a href="#" class="menu-navegacao__link"> Eu sou Mozi </a> </li>
-                    <li> <a href="#" class="menu-navegacao__link"> Trajetória </a>  </li>
-                    <li> <a href="#" class="menu-navegacao__link"> Fale comigo! </a> </li>
+                    <li> <a href="#super-aluna" class="menu-navegacao__link"> Eu sou Mozi </a> </li>
+                    <li> <a href="#trajetoria" class="menu-navegacao__link"> Trajetória </a>  </li>
+                    <li> <a href="#fale-comigo" class="menu-navegacao__link"> Fale comigo! </a> </li>
 
                 </ul>
 
@@ -36,7 +36,7 @@
         </header>
 
         <main>  
-            <section class="card-introducao">
+            <section class="card-introducao" id="super-aluna">
                 <h2 class="card-introducao__titulo"> Um pouco sobre mim...</h2>
                 <div class="container-texto">
                     <div class="container-texto__paragrafos">
@@ -48,7 +48,7 @@
                 </div>
             </section>
 
-            <section class= "container-trajetoria">
+            <section class= "container-trajetoria" id="trajetoria">
                 <h2 class= "container-trajetoria__titulo"> Deixa eu te contar um pouco sobre a minha trajetória :) </h2>
                 <div class="container-trajetoria__paragrafo">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsum, fugit tempora praesentium sed exercitationem voluptate. Mollitia molestiae magni, accusantium deserunt repellendus porro aut totam quibusdam cum adipisci repudiandae tenetur?</p>
@@ -56,6 +56,8 @@
                 </div>
 
             </section>
+
+
 
             <section class="card-gostos">
                 <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
@@ -96,6 +98,51 @@
 
             </section>   
             
+            <section class="card-fale-conosco" id="fale-comigo">
+                <h2> Fale comigo!</h2>
+                <form> 
+                    <div class= "campo-form">
+                        <label for="nome">Me fala o seu nome completo:</label>
+                        <input type="text" name="nome" placeholder="Digite o seu nome completo" required>
+                        <label for="tel">Digite o seu telefone:</label>
+                        <input type="tel" name="telefone" max="12" placeholder="+55 (XX) XXXXX-XXXX">
+                        <label for="email">Me fala o seu email:</label>
+                        <input type="email" name="email" placeholder="seuemail@email.com">
+                        <label for="mensagem">Deixe sua mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" placeholder="Digite a sua mensagem"></textarea>
+                        <label for="comidas"> Qual a sua comida favorita?</label>
+                        <select name="comidas-que-eu-gosto" id= "comidas">
+                            <option value="coxinha"> Coxinha </option>
+                            <option value="caruru"> Caruru </option>
+                            <option value="aipim"> Aipim </option>
+                        </select>
+
+                        <fieldset> 
+                            <legend>Como posso entrar em contato com você?
+                            <div>                          
+                            <input type="radio" value="zap" name="contato" id="zap" for="zap" ><label>WhatsApp</label>
+                            <input type="radio" value="linkedinho" name="contato" id="linkedinho" for="linkedinho"><label>LinkedIn</label>
+                            <input type="radio" value="email1" name="contato" id="email1" for="email1"><label>E-mail</label>
+                            </div>
+                            </legend>
+                        </fieldset>
+                    </div> 
+
+                    
+    
+                    <div>
+                        <input type="checkbox"> <label> Concorda em fornecer os seus dados para que eu entre em contato?</label>
+                    </div>
+
+                 
+    
+                    <div class="form-botao">
+                        <input type="submit" value="Enviar formulario!">
+                    </div>
+    
+    
+                </form>
+                </section>
             
         </main>
 

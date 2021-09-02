@@ -114,19 +114,28 @@ label {
     color:white;
 }
 form input:not(:last-child) {
-    width: 30vh;
+    width: 36vh;
+    height: 5.5vh;
     border-radius: 10px;
     border-color: none;
+    font-size: 1rem ;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 form input[type="button"]{
     background-color: #E5BC30;
     border-color: none;
     font-size: 1rem;
-    padding: 8px;
+    padding: 8px 18px;
     border-radius: 10px;
     margin-left: 20px;
 }
-
+form input[type="button"]:hover{
+    background-color: white;
+}
 
 .card-gostos__titulo{
     font-size: 25px;

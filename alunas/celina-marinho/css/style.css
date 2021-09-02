@@ -62,11 +62,14 @@
 }
 
 main{
-    width: 100%;
+    width: 90%;
     background-color: rgb(243,239,239);
+    margin: 3% 5%;
+    border-radius: 10px;
+    box-shadow: 10px 10px #20171f;
 }
 
-.card-introducao{
+.card-introducao, .container-trajetoria, .card-gostos{
     width: 80%;
     padding: 4%;
 }
@@ -104,3 +107,70 @@ main{
     color: #502f4c;
     
 }
+
+.card-gostos__titulo{
+    font-size: 25px;
+    color: #20171f;
+    margin-bottom: 30px;
+}
+
+.container-listas{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.lista{
+    width: 30%;
+    background-color: #A866AD;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.lista h3{
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lista__item li{
+    color: #ffffff;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.lista__item li::before{
+    content: "❤";
+    margin-right: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #a36f9c;
+}
+
+.display-inline div{
+    display: inline;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.display-block div{
+    display: block;
+    width: 100px;
+    background-color: brown;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.display-inline-block div{
+    display: inline-block;
+    width: 100px;
+    background-color: rgb(17, 85, 102);
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+

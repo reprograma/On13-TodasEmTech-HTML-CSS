@@ -49,6 +49,11 @@
     font-size: 20px;
     padding: 10px;
 }
+.menu-navegacao__link:hover{
+    background-color: white;
+    color: blue;
+    border-radius: 10px;
+}
 
 .banner__titulo{
     color: #ffffff;

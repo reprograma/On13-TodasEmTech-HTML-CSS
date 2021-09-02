@@ -64,6 +64,7 @@
 .banner__subtitulo{
     color: #ffffff;
     font-size: 20px;
+    margin-bottom: 15px;
 }
 
 main{
@@ -138,14 +139,16 @@ main{
     color: #ffffff;
     font-size: 17px;
     text-align:center;
+    margin-bottom: 18px;
 }
 .lista__item li{
     color: #ffffff;
     margin-bottom: 10px;
+    list-style: none;
 }
 .lista__item li::before{
     content: "❤";
-    margin-right: 10px;
+    margin-right: 09px;
 }
 footer{
     text-align: center;
@@ -190,7 +193,7 @@ label, input{
 }
 fieldset{
     border: 2px; solid #502f64c;
-    color: #ffffff;
+    color: #272629;
     border-radius: 10px;
     padding: 10px;
 }

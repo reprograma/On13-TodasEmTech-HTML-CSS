@@ -8,18 +8,18 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="<link rel = "preconnect" href = "https://fonts.googleapis.com">
         <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-        <link href = "https: //fonts.googleapis.com/css2? family = Kaisei + HarunoUmi & display = swap "rel =" stylesheet ">família = Josefin + Sans: wght @ 100 &família = Oswald: wght @ 200 &">
+        <link href = "https: //fonts.googleapis.com/css2? family = Kaisei + HarunoUmi & display = swap "rel =" stylesheet ">
     </head>
     <body>
-        <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+        <!-- Aqui vai estão as informações visíveis ao usuário -->
         <header class="cabecalho">
 
             <nav class="menu">
                 <a href="" class="menu__logo"></a>
                 <ol class="menu-navegacao">
                     <li><a href="https://www.linkedin.com/feed/" class="menu-navegacao__link">Quezia Guilhermina</a></li>
-                    <li><a href="#" class="menu-navegacao__link">Trajetória</a></li>
-                    <li><a href="#" class="menu-navegacao__link">Fale Conosco</a></li>
+                    <li><a href="#trajetoria" class="menu-navegacao__link">Trajetória</a></li>
+                    <li><a href="#fale-conosco" class="menu-navegacao__link">Fale Conosco</a></li>
                 </ol>
             </nav>
         
@@ -30,25 +30,23 @@
 
         </header>
         <main>
-            <section class="card-introducao">
+            <section class="card-introducao"id="Quezia Guilhermina">
                 <h2 class="card-introducao__titulo">Uma palhinha sobre o que me cerca</h2>
                 <div class="container-texto">
                     <div class="container-texto__paragrafos">
                         <p>Sou uma mulher negra, nascida e criada no Estado do Espírito Santo. Apaixonada por minha terra. Que modéstia à parte e maravilhosa. Uma curiosidade sobre o ES...em um percurso de  40 minutos de carro você curte uma bela praia e se deleita nos frios das montanhas capixabas.</p>
-                           <p> O mundo da Tecnologia e as imensas prossibilidades de vagas no mercado de trabalho com generosas gratificaçãos.Terminei o curso de pedagogia e guardei o sonho de estudar TI no fundo do coração.</p>
-                        <p>A oportunidade apareceu e aqui estamos nós com o pensamento fixo e o peito batendo aceledo. É desafiador? Sim. Tubo é possivel pata que musca </p>
+                           <p> O mundo da Tecnologia é fascinante... Quando concluí a graduação me pedagogia eu guardei o sonho de estudar TI no fundo do coração.</p>
+                        <p>A oportunidade apareceu e aqui estamos nós com o pensamento fixo e o coração batendo aceledo. É desafiador? Sim. Tubo é possivel para quem busca realizar. </p>
                     </div>
                     <img src="img/1.jpeg" alt="Um desenho de quezia focando seu rosto" class="container-texto__imagem">
                 </div>
             </section>
-            <section class="container-trajetoria">
-                <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a minha trajetória nessa vida...</h2>
+            <section class="container-trajetoria" id="trajetoria">
+                <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a minha vida...</h2>
                 <div class="container-trajetoria__paragrafo">
-                    <p>Sempre tive o sonho de estudar e "subir na vida", para quem reside na periferia esta é um frase muito repetida pelos pais. E assim eu fui crescendo e buscando meu lugar ao sol. Sempre estudei em escola pública. Cursei pedagogia consegui trabalhar na área, me apaixonei pela área da Tecnologia e pretendo agregar a experiênca na educação à tecnologia. </p>
+                    <p>Sempre tive o sonho de estudar e "subir na vida", para quem reside na periferia esta é um frase muito repetida pelos pais. E assim eu fui crescendo e buscando meu lugar ao sol. Sempre estudei em escola pública. Cursei pedagogia consegui trabalhar na área, me apaixonei pela área da Tecnologia e pretendo agregar a experiênca que tenho na educação à tecnologia. </p>
                     <p>Em meus diálogos sempre procuro incentivar as pessoas evoluírem quanto ao pessoal, profissional. E uma fórmula maravilhosa é o programa reprograma juntamente com a Equipe que a compôe.</p>
-    
                 </div>
-
             </section>
             
         <section class="card-gostos">
@@ -89,15 +87,15 @@
             </div>
 
         </section>
-        <section>
+        <section class="card-fale-conosco" id="fale-conosco">
             <h2>Fale conosco</h2>
             <form>
                 <div class="campo-form">
                     <label for="nome">Nome completo:</label>
-                    <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo">
+                    <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
                     
                     <label for="idade">Qual a sua idade?:</label>
-                    <input id="idade" type="number" name="idade" min="0" max="120" value="0">
+                    <input id="idade" type="number" name="idade" min="0" max="120" value="0" required>
                     
                     <label for="email">Digite o seu email:</label>
                     <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
@@ -105,19 +103,35 @@
                     <label for="telefone">Digite o seu telefone:</label>
                     <input  id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
 
-                    <label for="mensagem">Digite a dia mensagem:</label>
+                    <label for="mensagem">Digite sua mensagem:</label>
                     <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
 
-                    <label for="comidas">Qual a sua comida favorita?</label>
+                    <label for="comidas">Qual a sua atividade favorita?</label>
                     <select name="comidas-que-eu-gosto" id="comidas">
-                        <option value="coxinha">Coxinha</option>
-                        <option value="hamburguer">Hambúrguer</option>
-                        <option value="pizza">Pizza</option>
+                        <option value="espostes">Coxinha</option>
+                        <option value="jogos/tecnologia">Jogos Ditital</option>
+                        <option value="cinema">Cinema</option>
+                        <option value="teatro">Teatro</option>
+                        <option value="Viajar">Viajar</option>
+                        <option value="ocio">Descansar</option>
                     </select>
                 </div>
+                <fieldset>
+                    <legend>Como podemos manter contato com você?</legend>
+                    <div>
+                        <input type="radio" checked value="whatsapp" name="contato" id="whatsapp">
+                        <label for="whatsapp">whatsapp</label>
+                        
+                        <input type="radio" value="linkedin" name="contato" id="linkedin">
+                        <label for="linkedin">Linkedin</label>
 
-                
-
+                        <input type="radio" value="email1" name="contato" id="email1">
+                        <label for="email1">E-mail</label>
+                    </div>
+                </fieldset>
+                <div class="form-botao">
+                    <input type="submit" value="Enviar Formulário">
+                </div>
             </form>
 
 

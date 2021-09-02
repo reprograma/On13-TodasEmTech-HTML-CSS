@@ -3,89 +3,125 @@
     <head>
         <!-- Aqui vai ser incluída informações não visíveis ao usuário-->
         <meta charset="UTF-8">
-        <title>Super aluna {reprograma}</title>
+        <title> Super aluna {reprograma} </title>
         <link rel="stylesheet" href="./css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,200;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
         
     </head>
     <body>
         <!-- Aqui vai ser incluída informações visíveis ao usuário -->
-        <header class="cabecalho">
-
-            <nav class="menu">
-                <a href="" class="menu__logo">{}</a>
-                <ul class="menu-navegacao" >
-                    <li><a href="#" class="menu-navegacao__link">Super Aluna</a></li>
-                    <li><a href="#" class="menu-navegacao__link"> Trajetória</a></li>
-                    <li><a href="#" class="menu-navegacao__link">Fale conosco</a></li>                
-                </ul>
-            </nav>
-
-            <div class="banner">
-                <h1 class="banner__titulo" >Olá, seu sou a super Aluna {reprograma}</h1>
-                <p class="banner__subtitulo">Tá passada?vem conhecer um pouco sobre o meu mundão</p> 
+    <header class="cabecalho">
+        <nav class="menu">
+            <a href="" class="menu__logo">{}</a>
+            <ul class="menu-navegacao">
+                <li><a href="#super-aluna" class="menu-navegacao__link">Super Aluna</a></li>
+                <li><a href="#trajetoria" class="menu-navegacao__link">Trajetória</a></li>
+                <li><a href="#fale-conosco" class="menu-navegacao__link">Fale conosco</a></li>
+            </ul>
+        </nav>
+        
+        <div class="banner">
+            <h1 class="banner__titulo">Olá,eu sou a super Aluna{Reprograma}</h1>
+            <p class="banner__subtitulo">Tá passada?Vem conhecer um pouco sobre o meu mundo</p>
+        </div>
+    </header>
+    <main>
+        <section class="card-introducao" id="super-aluna">
+            <h2 class="card-introucao__titulo">Um pouco sobre o meu mundinho...</h2>
+            <div class="container-texto">
+                <div class="container-texto__paragrafos">
+                    <p>Olá, me chamo Ana Claudia Gaspar,uma nata sergipana de 30 anos.</p>
+                    <p>Tenho grande empatia pelo próximo, e isso fez com que eu me tornasse doadora de sangue e médula osséa. Amo a vida, a natureza e os animais. Apaixonada por suculentas e cactos, bem como animes, séries e café :)</p>
+                </div>
+                <img src="./img/menina-globo.png" alt="Menina segurando o globo" class="container-texto__imagem">
             </div>
-                
-        </header>
-        <main>
-            <section class="card-introducao">
-                <h2 class="card-introducao__titulo">Um pouco sobre o meu mundinho...</h2>
-                <div class="container-texto">
-                    <div class="container-texto__paragrafo">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur vero exercitationem excepturi dicta porro quasi dolores voluptas. Ipsa consectetur rerum nam alias? A quidem quos itaque, provident ea temporibus nesciunt! </p>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aperiam veniam aspernatur reiciendis, ab quibusdam aliquam dolor est. Dolorum et vero velit temporibus repudiandae maxime asperiores consequatur molestias qui neque!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores blanditiis quibusdam tempora necessitatibus rem voluptas voluptates assumenda alias fugit, explicabo magni ullam ratione temporibus officiis eos velit officia non harum.</p>
-                    </div>
-                    <img src="./img/menina-globo.png" alt="Menina segurando o globo" class="container-texto__imagem">
-                </div>
-            </section>
-            <section class="conteiner-trajetoria">
-                <h2 class="conteiner-trajetoria__titulo">Deixa eu te falar um pouco sobre a minha trajetória nessa vida </h2>
-                <div class="conteiner-trajetoria__paragrafo">
+        </section>
 
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor odit aperiam corporis suscipit tempora quis exercitationem ratione velit ullam, aliquid, laudantium hic necessitatibus nihil quibusdam rem? Doloribus similique consequuntur ducimus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, debitis eaque similique maiores facere dicta amet veritatis magnam ducimus recusandae accusantium iste quisquam molestiae. Voluptatibus, nesciunt. Fuga aliquid ad asperiores.</p>
+        <section class="container-trajetoria" id="trajetoria">
+            <h2 class="container-trajetoria__titulo">Deix eu te contar um pouco sobre a minha trajetória nessa vida...</h2>
+            <div class="container-trajetoria__paragrafo">
+                <p>Formada em Engenharia de Pesca pela UFS e pelo IFS em Técnico de Segurança do Trabalho. Estou em transição de carreira,e a programação foi a área escolhida para essa nova jornada, pois sempre gostei de tecnologia.Ganhei uma bolsa de estudos da Reprograma e essa oportunidade foi a deixa para que eu me dedicasse a esse novo universo, atualmente sou estudante front-end.</p>
+                <p>Já trabalhei em diversas funções: Reforço escolar, trabalhei com comunidades pesqueiras, personalizados, instrutora particular do office, ensino médio, etc...</p> 
+        </section>
+        <section class="card-gostos">
+            <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
+            <div class="container-listas">
+                <div class="lista">
+                    <h3>Amo viajar, e tenho uma listinha de quais países que quero conhecer:</h3>
+                    <ul class="lista__item">
+                        <li>Itália - Veneza</li>
+                        <li>Holanda - Amsterdã</li>
+                        <li>Grécia</li>
+                        <li>México</li>
+                        <li>República das Maldivas</li>
+                    </ul>
                 </div>
-            </section>
-            <section class="card-gostos">
-                <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
-                <div class="container-listas">
-                    <div class="lista">
-                        <h3>Amo viajar, e tenho um alistinha de quais paises quero conhecer:</h3>
-                        <ul>
-                            <li>pais 1</li>
-                            <li>pais 2</li>
-                            <li>pais 3</li>
-                            <li>pais 4</li>
-                            <li>pais 5</li>
-                         </ul>
-                    </div>
-                    <div>
-                        <h3> Amo ouvir música. Confira as minhas musicas favoritas:</h3>
-                        <ul>
-                            <li>música 1</li>
-                            <li>música 2</li>
-                            <li>música 3</li>
-                            <li>música 4</li>
-                            <li>música 5</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Amo ler, e esses são os meus livros preferidos:</h3>
-                        <ul>
-                            <li>livros 1</li>
-                            <li>livro 2</li>
-                            <li>livro 3</li>
-                            <li>livro 4</li>
-                            <li>livro 5</li>
-                    </div>        
+                <div class="lista">
+                    <h3>Amo ouvir música.Confira as minhas músicas favoritas:</h3>
+                    <ul class="lista__item">
+                        <li>Photograph - Ed Sheeran</li>
+                        <li>Depois - Marisa Monte  </li>
+                        <LI>Garganta - Ana Carolina</LI>
+                        <li>back for good - Gary Barlow  </li>
+                        <LI>Ouvi dizer - Melim</LI>
+                    </ul>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <p>site desenvolvido por Ana Claudia Gaspar</p>
-        </footer>
+                <div class="lista">
+                    <h3>Amo ler, e esses são os meus livros preferidos:</h3>
+                    <ul class="lista__item">
+                        <li>Biblía</li>
+                        <li>A cabana</li>
+                        <li>O pequeno princípe</li>
+                        <li>Orgulho e preconceito</li>
+                        <li>Por que os homens amam as mulheres poderosas? </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="card-fale-conosco" id="fale-conosco">
+            <h2>Fale conosco</h2>
+            <form >
+                <div class="campo-form">
+                    
+                    <label for="nome">Nome completo</label>
+                    <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
 
+                    <label for="email">Digite o seu email</label>
+                    <input  id="email" type="email"  name="email" placeholder="seuemail@dominio.com" required >
+
+                    <label for="telefone">Digite seu telefone</label>
+                    <input id="telefone" type="tel"  name="telefone" placeholder="(XX) XXXXX-XXXX" required >
+
+                    <label for="mensagem">Digite a sua mensagem</label>
+                    <textarea  id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+                    <label for="horario">Qual horário você está disponível?</label>
+                    <select name="horario-disponivei" id="horario">
+                        <option value="manha">Manhã</option> 
+                        <option value="tarde">Tarde</option> 
+                        <option value="noite">Noite</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <legend>Como podemos entrar em contato com você?</legend>
+                    <div>
+                        <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                        <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                        <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <input type="checkbox" checked><label>Gostaria de receber nossas novidades por email?</label> 
+                </div>
+                <div class="form-botao">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Site desenvolvido por Ana Claudia Gaspar</p>
+    </footer>
     </body>
 </html>

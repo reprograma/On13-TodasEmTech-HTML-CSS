@@ -1,95 +1,103 @@
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: 'Nunito Sans', sans-serif;
+    box-sizing:border-box;
+    font-size:16px;
+    font-family: 'Roboto Mono', monospace;
 }
 .cabecalho{
     width: 100%;
     height: 80vh;
-    background: linear-gradient(rgba(116,44,126,0.5),rgba(167,92,204,0.7),rgba(204,92,98,0.7)),url(./../img/background.jpg) no-repeat; 
+    background: linear-gradient(rgba(97, 27, 62, 0.5),rgba(167, 29, 71, 0.7)),url(./../img/background4.jpg) no-repeat repeat;
     background-size: cover;
 }
+
 .menu{
     width: 100%;
-    background-color: #a36f96;
-    display:flex;
+    background-color:rgb(173, 74, 99);
+    display: flex;
     justify-content: space-between;
     height: 60px;
     align-items: center;
     padding: 0 20px;
     position: fixed;
-    
-    
-
-    
 }
+
 .banner{
-   height: 100px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center; 
-   align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 .menu__logo{
-    color:#ffffff;
+    color: #ffffff;
     text-decoration: none;
     font-size: 30px;
     
 }
+
 .menu-navegacao{
     display: flex;
     list-style: none;
 }
+
 .menu-navegacao__link{
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
     padding: 10px;
-    text-decoration: ;
+    transition: 0.5 all;
+    border-radius:10px ;
 }
+.menu-navegacao__link:hover{
+    background-color: hsla(320, 97%, 55%, 0.582);
+}
+
 .banner__titulo{
     color: #ffffff;
     font-size: 30px;
     margin-bottom: 15px;
-
 }
+
 .banner__subtitulo{
     color: #ffffff;
     font-size: 20px;
 }
+
 main{
-    width: 100%;
-    background-color: #rgb(243,239,239);
+    width: 90%;
+    background: linear-gradient(rgba(255, 251, 255, 0.5),rgba(236, 113, 165, 0.6));
+    margin: 3% 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #cccccc;
+
 }
 
-.card-introducao, .container-trajetoria,.card-gostos{
-    padding:4% ;
+.card-introducao,.container-trajetoria, .card-gostos{
+    padding: 4%;
+
 }
 .card-introducao__titulo{
-    color: rgb(162,153,165,);
+    color: rgb(162,153,165);
     font-size: 30px;
     margin-bottom: 20px;
-
 }
 .container-texto{
     display: flex;
     align-items: center;
-
 }
-..container-texto__paragrafos{
+.container-texto__paragrafos{
     width: 60%;
     margin-right: 10%;
 }
-.container-texto__paragrafos p,.container-trajetoria__paragrafo p{ 
-    color:rgb(41,39,39) ;
+
+.container-texto__paragrafos p, .container-trajetoria__paragrafo p{
+    color: rgb(41, 39, 39);
     font-size: 17px;
     margin-bottom: 17px;
-    text-align: justify;
+    text-align: justify; 
 }
-
 .container-texto__imagem{
     width: 30%;
 }
@@ -98,16 +106,102 @@ main{
     margin-bottom: 30px;
     color: #502f4c;
 }
+
 .card-gostos__titulo{
     font-size: 25px;
     color: #20171f;
     margin-bottom: 30px;
 }
+
 .container-listas{
     display: flex;
+    justify-content: space-between; 
+}
+
+.lista{
+    width: 30%;
+    background-color: rgb(173, 74, 99);
+    border-radius: 10px;
+    padding: 16px;
+    transition: 0.5s all;
+    box-shadow: 5px 5px 9px #cccccc; 
+}
+
+.lista:hover{
+    transform: scale(1.1);
+}
+
+.lista h3{
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lista__item li{
+    color: #ffffff;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.lista__item li::before{
+    content:"❁" ;
+    margin-right: 10px;
 }
 footer{
     text-align: center;
     padding: 20px;
-    background-color: ;
+    background-color: rgb(173, 74, 99);
 }
+.campo-form{
+    display: flex;
+    flex-direction: column;
+
+}
+form{
+    width: 70%;
+    border: 2px solid #502f4c;
+    padding: 20px;
+    border-radius: 10px;
+}
+label,input{
+    margin-bottom: 10px;  
+}
+fieldset{
+    border: 2px solid #5c1544;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-botao{
+    display: flex;
+    justify-content: center;
+}
+
+.form-botao input{
+    border: 2px solid #ffffff;
+    background-color: #920955;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+} 
+.card-fale-conosco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-fale-conosco h2{
+    font-size: 25px;
+    color: #af2992;
+    margin-bottom: 20px;
+}
+ 
+
+
+
+
+
+
+
+
+

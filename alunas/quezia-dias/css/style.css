@@ -9,13 +9,13 @@
 .cabecalho{
     width: 100%;
     height: 80vh;
-    background: linear-gradient(rgba(116,44,126,0.5), rgba(167,92,204,0.7)), url(./../img/background.jpg) no-repeat;
+    background: linear-gradient(rgba(83, 179, 243, 0.5), rgba(13, 15, 105, 0.7)), url(./../img/qg.jpeg) no-repeat;
     background-size: cover;
 }
 
 .menu{
     width: 100%;
-    background-color: #a36f9c;
+    background-color: #1d89aa;
     display: flex; 
     justify-content:space-between; 
     height: 60px;
@@ -48,8 +48,13 @@
     text-decoration: none;
     font-size: 20px;
     padding: 10px;
+    transition: 0.5s all;
+    border-radius: 10px;
 }
 
+.menu-navegacao__link:hover{
+    background-color: #052833;
+}
 .banner__titulo{
     color: #ffffff;
     font-size: 30px;
@@ -62,8 +67,11 @@
 }
 
 main{
-    width: 100%;
+    width: 90%;
     background-color: rgb(243,239,239);
+    margin: 3% 5%;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px 20px; rgb(70, 70, 180);
 }
 
 .card-introducao, .container-trajetoria, .card-gostos{
@@ -71,7 +79,7 @@ main{
 }
 
 .card-introducao__titulo{
-    color: rgb(162,153,165);
+    color: rgb(70, 70, 180);
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -100,12 +108,12 @@ main{
 .container-trajetoria__titulo{
     font-size: 25px;
     margin-bottom: 30px;
-    color: #502f4c;
+    color: rgb(70, 70, 180);
 }
 
 .card-gostos__titulo{
     font-size: 25px;
-    color: #20171f;
+    color: rgb(70, 70, 180);
     margin-bottom: 30px;
 }
 
@@ -116,10 +124,16 @@ main{
 
 .lista{
     width: 30%;
-    background-color: #a866AD;
+    background-color: #1d89aa;
     border-radius: 10px;
     padding: 16px;
+    transition: 0.5 all;
+    box-shadow: 5px 5px 9px #cccccc;
 }
+.lista:hover{
+    transform: scale(1.1);
+}
+
 .lista h3{
     color: #ffffff;
     font-size: 17px;
@@ -136,7 +150,7 @@ main{
 footer{
     text-align: center;
     padding: 20px;
-    background-color: #a36f9c;
+    background-color: #1d89aa;
 }
 
 .display-inline div{
@@ -160,4 +174,23 @@ footer{
     background-color: rgb(17, 85, 102);
     margin-bottom: 20px;
     height: 100px;
+}
+.campo-form{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    width: 70%;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+label, input{
+    margin-bottom: 10px;
+}
+fieldset{
+    border: 2px; solid #502f64c;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
 }

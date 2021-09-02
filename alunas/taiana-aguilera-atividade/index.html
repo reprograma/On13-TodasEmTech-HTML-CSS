@@ -48,10 +48,10 @@
                         <p>Se você procura um companheiro independente, carinhoso e de fácil adaptação, talvez a melhor escolha seja a adoção de gatos. Os benefícios da adoção são inúmeros: além de ajudar a salvar vidas, a companhia dos gatos pode reduzir os sintomas de uma série de doenças.
                     </div>    
 </div>
-    </section>
+<div class="imagem-canela">
+    <img src="./img/Farofa-e-Canela-tomando-cafe.jpg" alt="Farofa-e-Canela-tomando-cafe">
 </div>
-                    <div class="container-listas">
-                        <div class="lista">
+                        <div class="container-lista">
                             <h3>Oito razões para optar pela adoção de gatos</h3>
                             <ul class="lista__item">
 <li>Sua saúde vai melhorar</li>
@@ -62,17 +62,56 @@
 <li>Você não terá que se preocupar muito com a manutenção da pelagem</li>
 <li>Você vai ganhar um novo membro da família sem ter tanto trabalho</li>
 <li>Gatos não são carentes</li>
-</ul>   
+</ul>
 </div>
-                    </div>
-<section>
-    <h2>Cat Contatos</h2>
-    <form action=""></form>
 </section>
+</section>
+<section class="card-fale-conosco" id="fale-conosco">
+    <h2>Cat Contatos</h2>
+    <form>
+        <div class="campo-form">
+            <label for="nome">Nome completo:</label>
+            <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+            
+            <label for="idade">Quantos gatinhos quer adotar?:</label>
+            <input id="idade" type="number" name="idade" min="0" max="120" value="0" required>
+            
+            <label for="email">Seu E-mail:</label>
+            <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone:</label>
+            <input  id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Digite sua mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Assunto"></textarea>
+
+            <label for="comidas">Prefere macho ou fêmea?</label>
+            <select name="comidas-que-eu-gosto" id="comidas">
+                <option value="coxinha">Macho</option>
+                <option value="hamburguer">Fémea</option>
+                <option value="pizza">Sem preferência</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>Como podemos entrar em contato com você?</legend>
+            <div>
+                <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+            </div>     
+        </fieldset>
+        <div>
+            <input type="checkbox" checked><label>Concorda com os termos de adoção?</label>
+        </div>
+        <div class="form-botao">
+            <input type="submit" value="Enviar formulário">
+        </div>
+    </form>
+
                 </section>
             </main>
             <footer>
-                <p>Site desenvolvido por Juliane Andrade - Aula {Reprograma} | © Copyright 2021</p>
+                <p>Site desenvolvido por Taiana Aguilera - Aula {Reprograma} | © Copyright 2021</p>
             </footer>
             
         </body>

@@ -5,6 +5,10 @@
     font-size: 16px;
     font-family: 'Nunito Sans', sans-serif;
 }
+h3{
+    font-size: 25px;
+    color: #fff;
+}
 
 .cabecalho{
     width: 100%;
@@ -15,7 +19,7 @@
 
 .menu{
     width: 100%;
-    background-color: #72a1f8;
+    background-color: #c615fc;
     display: flex; 
     justify-content:space-between; 
     height: 50px;
@@ -57,14 +61,14 @@
 }
 
 .banner__titulo{
-    color: #ffffff;
-    font-size: 40px;
+    color: #5b0263;
+    font-size: 50px;
     margin-bottom: 1px;
 }
 
 .banner__subtitulo{
-    color: #ffffff;
-    font-size: 20px;
+    color: #470258;
+    font-size: 25px;
 }
 
 main{
@@ -123,9 +127,15 @@ main{
     text-align: justify;
     padding: 25px;
 }
-.farofa-canela__imagem{
-    width: 300px;
+
+.imagem-canela{
     display: inline-block;
+    float: left;
+}
+
+.imagem-canela img{
+    width: 400px;
+
 }
 .card-gostos__titulo{
     font-size: 25px;
@@ -133,17 +143,22 @@ main{
     margin-bottom: 30px;
 }
 
-.container-listas{
-    display: flex;
-    justify-content: space-between; 
+.container-lista{
+    display: inline-block;
+    justify-content: space-between;
+    background: slateblue;
+    margin:0 20px;
+    padding: 80px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(179, 179, 179);
 }
 
 .lista{
-    background-color: #51a5e9;
+    background-color: #bd5cf5;
     border-radius: 20px;
-    padding: 45px;
+    padding: 35px;
     transition: 0.5s all;
-    box-shadow: 5px 5px 15px rgb(133, 131, 131);
+    box-shadow: 5px 5px 5px rgb(179, 179, 179);
     margin: 1% 25%;
 }
 .lista:hover{
@@ -152,25 +167,68 @@ main{
 
 .lista h3{
     color: #ffffff;
-    font-size: 17px;
+    font-size: 27px;
     text-align: center;
     margin-bottom: 10px;
 }
 
 .lista__item li{
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     list-style: none;
+    margin: 2%;
 }
 
 .lista__item li::before{
     content: "❤";
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
+form{
+    width: 80%;
+    border: 2px solid #502f4c;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+label, input{
+    margin-bottom: 10px;
+}
+
+fieldset{
+    border: 2px solid #502f4c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-botao{
+    display: flex;
+    justify-content: center;
+}
+
+.form-botao input{
+    border: 2px solid #ffffff;
+    background-color: #502f4c;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.card-fale-conosco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+}
+
+.card-fale-conosco h2{
+    font-size: 25px;
+    color: #86477e;
+    margin-bottom: 20px;
+}
 footer{
     text-align: center;
     padding: 20px;
     background-color: #a36f9c;
 }
-

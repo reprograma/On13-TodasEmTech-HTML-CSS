@@ -1,146 +1,282 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: 'Nunito Sans', sans-serif;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: 'Nunito Sans', sans-serif;
+    }
 
-.cabecalho{
-    width: 100%;
-    height: 80vh;
-    background: linear-gradient(rgba(116,44,126,0.5), rgba(167,92,204,0.7)), url(./../img/background.jpg) no-repeat;
-    background-size: cover;
-}
+    .highlight{
+        color: #fff;
+    }
 
-.menu{
-    width: 100%;
-    background-color: #a36f9c;
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-    align-items: center;
-    padding: 0 20px;
-    position: fixed;
-}
+    .cabecalho{
+        width: 100%;
+        height: 70vh;
+        background: linear-gradient(rgba(254, 234, 250,0.5), rgba(222, 226, 255, 0.5)), url(./../img/butterfly-1266420_1920.jpg) no-repeat;
+        background-size: cover;
+    }
 
-.banner{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .menu{
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        align-items: center;
+        padding: 0 20px;
+        position: fixed;
+    }
 
-.menu__logo{
-    color: #fff;
-    text-decoration: none;
-    font-size: 30px;
-}
+    .banner{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.menu-navegacao{
-    display: flex;
-    list-style: none;
-}
+    .menu__logo{
+        color: #fff;
+        text-decoration: none;
+        font-size: 30px;
+    }
 
-.menu-navegacao__link{
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 10px;
-}
+    .menu-navegacao{
+        display: flex;
+        list-style: none;
+    }
 
-.banner__titulo{
-    color:#fff;
-    font-size: 30px;
-    margin-bottom: 15px;
-}
+    .menu-navegacao__link{
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 10px;
+        transition: 0.5s all;
+        border-radius: 10px;
+    }
 
-.banner__subtitulo{
-    color: #fff;
-    font-size: 20px;
-}
+    .menu-navegacao__link:hover{
+        background-color: #fff;
+    }
 
-main{
-    width: 100%;
-    background-color: rgb(243,239,239);
-}
+    .banner__titulo{
+        color:black;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
 
-.card-introducao, .container-trajetoria, .card-gostos{
-    padding: 4%;
-}
+    .banner__subtitulo{
+        color: black;
+        font-size: 20px;
+    }
 
-.card-introducao__titulo{
-    color: rgb(162,153,165);
-    font-size: 30px;
-    margin-bottom: 20px;
-}
+    main{
+        width: 90%;
+        background-color: #CBC0D3;
+        display: flex;
+        margin: 3% 5%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgb(181, 175, 175);
+    }
 
-.container-texto{
-    display: flex;
-    align-items: center;
-}
 
-.container-texto__paragrafo{
-    width: 60%;
-    margin-right: 10%;
-}
+    .container-1{
+        width: 50%;
+        background-color: #8E9AAF;
+        border-radius: 50px;
+        padding: 10px;
+        margin-left: 50px;
+        margin: 10px;
+    }
 
-.container-texto__paragrafo p, .container-trajetoria__paragrafo p{
-    color: rgb(41,39,39);
-    font-size: 17px;
-    margin-bottom: 17px;
-    text-align: justify;
-}
+    .container-2{
+        width: 50%;
+        background-color: #8E9AAF;
+        border-radius: 50px;
+        padding: 10px;
+        margin-right: 50px;
+        margin: 10px;
+    }
 
-.container-texto__imagem{
-    width: 30%;
-}
+    .container-3{
+        width: 50%;
+        background-color: #8E9AAF;
+        border-radius: 50px;
+        padding: 10px;
+        margin-top: 50px;
+        margin: 10px;
+    }
 
-.container-trajetoria__titulo{
-    font-size: 25px;
-    margin-bottom: 30px;
-    color: #502f4c;
-}
+    .card-introducao, .container-trajetoria, .card-gostos{
+        padding: 4%;
+    }
 
-.card-gostos__titulo{
-    font-size: 25px;
-    color: #20171f;
-    margin-bottom: 30px;
-}
+    .card-introducao__titulo{
+        color: black;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
 
-.container-listas{
-    display: flex;
-    justify-content: space-between;
-}
+    .container-texto{
+        display: flex;
+        align-items: center;
+    }
 
-.lista{
-    width: 30%;
-    background-color: #A866AD;
-    border-radius: 10px;
-    padding: 16px;
-}
+    .container-texto__paragrafo{
+        width: 60%;
+        margin-right: 10%;
+    }
 
-.lista h3{
-    color: #fff;
-    font-size: 17px;
-    text-align: center;
-    margin-bottom: 20px;
-}
+    .container-texto__paragrafo p{
+        color: rgb(41,39,39);
+        font-size: 17px;
+        margin-bottom: 17px;
+        text-align: justify;
+        margin-top: 50px;
+    }
 
-.lista__item li{
-    color: #fff;
-    margin-bottom: 10px;
-    list-style: none;
-}
+    .container-texto__paragrafo ul{
+        display: flex;
+        justify-content: center;
+    }
 
-.lista__item li::before{
-    content: "❤";
-    margin-right: 10px;
-}
+    .container-texto__paragrafo ul li{
+        background: linear-gradient(rgb(255, 175, 204),rgb(201, 141, 141));
+        width: 100px;
+        text-align: center;
+        margin-left: 10px;
+        color: white;
+        padding: 10px;
+        font-size: 8px;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
 
-footer{
-    text-align: center;
-    padding: 20px;
-    background-color: #a36f9c;
-}
+    .container-texto__paragrafo ul li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .container-texto__paragrafo ul li img{
+        width: 50px;
+    }
+
+    .container-texto__paragrafo ul li a h3{
+        margin: 10px;
+        text-align: center;
+    }
+
+
+    .container-trajetoria__titulo{
+        font-size: 25px;
+        margin-bottom: 30px;
+        color: black;
+        margin-top: 50px;
+    }
+
+    .container-trajetoria__paragrafo p{
+        color: rgb(41,39,39);
+        font-size: 17px;
+        margin-bottom: 17px;
+        text-align: justify;
+        margin-top: 50px;
+    }
+
+    .card-gostos__titulo{
+        font-size: 25px;
+        color: black;
+        margin-bottom: 30px;
+    }
+
+    .container-listas{
+        display:table-row;
+        justify-content:space-between;
+    }
+
+
+    .lista{
+        width: 80%;
+        background: linear-gradient(rgb(255, 175, 204),rgb(201, 141, 141));
+        border-radius: 10px;
+        padding: 16px;
+        margin: 10%;
+        justify-content: center;
+        transition: 0.5s all;
+        box-shadow: 5px 5px 9px rgb(141, 138, 138);
+    }
+
+    .lista:hover{
+        transform: scale(1.1);
+    }
+
+    .lista h3{
+        color: #fff;
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .lista__item li{
+        color: #fff;
+        margin-bottom: 10px;
+        list-style: none;
+    }
+
+    .lista__item li::before{
+        content: "❤";
+        margin-right: 10px;
+    }
+
+    footer{
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(rgba(142, 154, 175, 0.9),rgba(255, 175, 204, 0.5), rgba(162, 210, 255,0.5));
+    }
+
+    .campo-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form{
+        width: 70%;
+        border: 2px solid rgb(141, 138, 138);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    label, input{
+        margin-bottom: 10px;
+    }
+
+    fieldset{
+        border: 2px solid #7d698b;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-botao{
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-botao input{
+        border: 2px solid #fff;
+        background-color: #7d698b;
+        color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .card-fale-conosco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-fale-conosco h2{
+        font-size: 25px;
+        color: #7d698b;
+        margin-bottom: 20px;
+    }

@@ -71,7 +71,7 @@ main{
     background-color: rgb(243,239,239);
 }
 
-.card-introducao, .container-trajetoria, .card-gostos{
+.card-introducao, .container-form, .card-gostos{
     padding: 4%;
 }
 
@@ -91,7 +91,7 @@ main{
     margin-right: 10%;
 }
 
-.container-texto__paragrafos p, .container-trajetoria__paragrafo p{
+.container-texto__paragrafos p, .container-form__paragrafo p{
     color: rgb(41, 39, 39);
     font-size: 17px;
     margin-bottom: 17px;
@@ -102,12 +102,12 @@ main{
     width: 30%;
 }
 
-.container-trajetoria__titulo{
+.container-form__titulo{
     font-size: 25px;
     margin-bottom: 30px;
     color: #f5f5f5;
 }
-.container-trajetoria {
+.container-form {
   padding: 40px;
   border-radius: 10px;
   background-color: #073d69;
@@ -125,12 +125,12 @@ form input:not(:last-child) {
     border-color: none;
     font-size: 1rem ;
 }
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+input::-webkit-outer-spin-submit,
+input::-webkit-inner-spin-submit {
   -webkit-appearance: none;
   margin: 0;
 }
-form input[type="button"]{
+form input[type="submit"]{
     background-color: #E5BC30;
     border-color: none;
     font-size: 1rem;
@@ -138,7 +138,7 @@ form input[type="button"]{
     border-radius: 10px;
     margin-left: 20px;
 }
-form input[type="button"]:hover{
+form input[type="submit"]:hover{
     background-color: white;
 }
 

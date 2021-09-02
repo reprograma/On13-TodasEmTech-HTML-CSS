@@ -50,7 +50,15 @@
     text-decoration: none;
     font-size: 20px;
     padding: 10px;
+    transition: 0.5s all;
+    border-radius: 10px;
+
 }
+
+.menu-navegacao__link:hover {
+    background-color: #86477e;
+}
+
 
 .banner__titulo{
     color: #ffffff;
@@ -64,8 +72,12 @@
 }
 
 main{
-    width: 100%;
+    width: 90%;
     background-color: rgb(243,239,239);
+    background: linear-gradient( rgba(255,251,255,0.5), rgba(199,100,216,0.6));
+    margin: 3% 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px #20171f;
 }
 
 .card-introducao, .container-trajetoria, .card-gostos{
@@ -121,6 +133,12 @@ main{
     background-color: #a866ad;
     border-radius: 10px;
     padding: 16px;
+    transition: 0.5s;
+    box-shadow: 5px 5px 9px #cccccc;
+}
+
+.listas:hover {
+    transform: scale(1.1);
 }
 
 .listas h3{
@@ -136,7 +154,7 @@ main{
     list-style: none;
 }
 
-.lista__item li::before{
+.lista__item li:before{
     content: "❤";
     margin-right: 10px;
 }
@@ -148,3 +166,51 @@ footer{
     color: #ffffff;
 }
 
+.campo-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form{
+    width: 70%;
+    border: 2px solid #502f4c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label, input{
+    margin-bottom: 10px;
+
+}
+
+fieldset{
+    border: 2px solid #502f4c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-botao{
+    display: flex;
+    justify-content: center;
+    }
+
+.form-botao input {
+    border: 2px solid #ffffff ;
+    background-color: #502f4c;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.card-faleconosco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-faleconosco h2{
+    font-size: 25px;
+    color: #86477e;
+    margin-bottom: 10px;
+}

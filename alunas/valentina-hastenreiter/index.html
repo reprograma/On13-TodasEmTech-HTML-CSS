@@ -18,9 +18,9 @@
         <nav class="menu">
             <a href="" class="menu__logo">{ }</a>
             <ul class="menu-navegacao">
-                <li><a href="#" class="menu-navegacao__link">Super Aluna</a></li>
-                <li><a href="#" class="menu-navegacao__link">Trajetória</a></li>
-                <li><a href="#" class="menu-navegacao__link">Fale Conosco</a></li>
+                <li><a href="#super-aluna" class="menu-navegacao__link">Super Aluna</a></li>
+                <li><a href="#trajetoria" class="menu-navegacao__link">Trajetória</a></li>
+                <li><a href="#fale-conosco" class="menu-navegacao__link">Fale Conosco</a></li>
             </ul>
         </nav>
 
@@ -31,7 +31,7 @@
 
     </header>
     <main>
-        <section class="card-introducao">
+        <section class="card-introducao" id="super-aluna">
             <h2 class="card-introducao__titulo">Um pouco sobre o meu mundinho...</h2>
             <div class="container-texto">
                 <div class="container-texto__paragrafos">
@@ -48,8 +48,8 @@
                 <img src="./img/menina-globo.png" alt="Menina segurando o globo" class="container-texto__imagem">
             </div>
         </section>
-        <section class="container-trajetoria">
-            <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a minha trajetória nessa vida...
+        <section class="container-trajetoria" id="trajetoria">
+            <h2 class="container-trajetoria__titulo" >Deixa eu te contar um pouco sobre a minha trajetória nessa vida...
             </h2>
             <div class="container-trajetoria__paragrafo">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium culpa, sequi, doloribus totam quo
@@ -97,6 +97,49 @@
                     </ul>
                 </div>
                 <div>
+        </section>
+        <section class="card-faleconosco" id="fale-conosco">
+            <h2>Fale Conosco</h2>
+            <form>
+                <div class="campo-form">
+
+                <label for="nome">Nome Completo:</label>
+                <input id="nome" type="text" name="nome" placeholder="digite o seu nome completo" required>
+                
+                <label for="Idade">Qual a sua idade?:</label>
+                <input id="Idade" type="number" min="0" max="120" value="0" name="idade" placeholder="digite a sua idade">
+                
+                <label for="email">Digite o seu e-mail:</label>    
+                <input id="email" type="e-mail" name="email" placeholder="seuemail@seudominio.com" required>
+                
+                <label for="cel">Qual é o seu telefone?:</label>
+                <input id="cel" type="cel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+                
+                <label for="mensagem">Digite a sua mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+                
+                <label for="comidas"> Qual é a sua comida favorita</label>
+                <select name="comidas-que-eu-gosto" id="comidas">
+                    <option value="Coxinha">Coxinha</option>
+                    <option value="Hambúrguer">Hambúrguer</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Sushi">Sushi</option>
+                </select>
+
+                </div>
+                <fieldset>
+                <Legend>Como podemos entrar em contato com você?</Legend>
+                <input type="radio" value="whatsapp" name="contato" id="whatsapp"> <label for="whastapp">Whastapp</label>
+                <input type="radio" value="Lindekin" name="contato" id="Linkedin"> <label for="Linkedin">LindekIn</label>
+                <input type="radio" value="email1" name="contato" id="email1"> <label for="email1">E-mail</label>
+                </fieldset>    
+                <div>
+                    <input type="checkbox"> <label for="">Concorda que você é maravilhosa?</label>
+                </div>
+                <div class="form-botao">
+                    <input type="submit" value="Enviar formulário">
+                </div>
+            </form>
         </section>
         </main>
     <footer>

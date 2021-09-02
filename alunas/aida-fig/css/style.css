@@ -9,13 +9,13 @@
 .cabecalho{
     width: 100%;
     height: 80vh;
-    background: linear-gradient(rgba(116,44,126,0.5), rgba(167,92,204,0.7)), url(./../img/background.jpg) no-repeat;
+    background: linear-gradient(rgba(170, 134, 100, 0.5), rgba(194, 92, 61, 0.7)), url(./../img/background-1.jpeg) no-repeat;
     background-size: cover;
 }
 
 .menu{
     width: 100%;
-    background-color: #a36f9c;
+    background-color: #A52A2A;
     display: flex; 
     justify-content:space-between; 
     height: 60px;
@@ -33,9 +33,8 @@
 }
 
 .menu__logo{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 30px;
+    width: 45px;
+    height: 45px;
 }
 
 .menu-navegacao{
@@ -44,26 +43,35 @@
 }
 
 .menu-navegacao__link{
-    color: #ffffff;
+    color: #FFD700;
     text-decoration: none;
     font-size: 20px;
     padding: 10px;
+    transition: 0.5s all;
+}
+
+.menu-navegacao__link:hover {
+    background-color: #FF7F50;
 }
 
 .banner__titulo{
-    color: #ffffff;
+    color: #FFD700;
     font-size: 30px;
     margin-bottom: 15px;
 }
 
 .banner__subtitulo{
-    color: #ffffff;
+    color: #FFD700;
     font-size: 20px;
 }
 
 main{
-    width: 100%;
-    background-color: rgb(243,239,239);
+    margin: 3% auto;
+    width: 90%;
+    background: linear-gradient(rgba(255, 251, 255, 0.5), rgba(199, 100, 216, 0.6));
+    border-radius: 10px;
+    box-shadow:0px 0px 10px #cccccccc;
+
 }
 
 .card-introducao, .container-trajetoria, .card-gostos{
@@ -71,9 +79,11 @@ main{
 }
 
 .card-introducao__titulo{
-    color: rgb(162,153,165);
+    color: #A52A2A;
     font-size: 30px;
     margin-bottom: 20px;
+    text-align: center;
+
 }
 
 .container-texto{
@@ -87,7 +97,7 @@ main{
 }
 
 .container-texto__paragrafos p, .container-trajetoria__paragrafo p{
-    color: rgb(41, 39, 39);
+    color: #FF7F50;
     font-size: 17px;
     margin-bottom: 17px;
     text-align: justify; 
@@ -100,13 +110,16 @@ main{
 .container-trajetoria__titulo{
     font-size: 25px;
     margin-bottom: 30px;
-    color: #502f4c;
+    color: #A52A2A;
+    text-align: center;
+
 }
 
 .card-gostos__titulo{
     font-size: 25px;
-    color: #20171f;
+    color: #A52A2A;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .container-listas{
@@ -116,9 +129,16 @@ main{
 
 .lista{
     width: 30%;
-    background-color: #A866AD;
+    background-color: #A52A2A;
     border-radius: 10px;
     padding: 16px;
+    box-shadow: 5px 5px 9px #cccccc;
+    transition: 0.5s all;
+    
+}
+
+.lista:hover {
+    transform: scale(1.1);
 }
 
 .lista h3{
@@ -127,9 +147,8 @@ main{
     text-align: center;
     margin-bottom: 20px;
 }
-
 .lista__item li{
-    color: #ffffff;
+    color: #FFD700;
     margin-bottom: 10px;
     list-style: none;
 }
@@ -142,10 +161,58 @@ main{
 footer{
     text-align: center;
     padding: 20px;
-    background-color: #a36f9c;
+    background-color: #A52A2A;
+    color: #ffffff;
 }
 
-.display-inline div{
+.campo-form{
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    width: 70%;
+    border: 2px solid #502f4c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label, input{
+    margin-bottom: 10px;
+}
+
+fieldset{
+    border: 2px solid #502f4c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-botao{
+    display: flex;
+    justify-content: center;
+}
+
+.form-botao input{
+    border: 2px solid #ffffff;
+    background-color: #502f4c;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.card-fale-conosco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-fale-conosco h2{
+    font-size: 25px;
+    color: #86477e;
+    margin-bottom: 20px;
+}
+/* .display-inline div{
     display: inline;
     background-color: blue;
     width: 100px;
@@ -166,6 +233,6 @@ footer{
     background-color: rgb(17, 85, 102);
     margin-bottom: 20px;
     height: 100px;
-}
+} */
 
 

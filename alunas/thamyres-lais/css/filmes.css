@@ -10,8 +10,6 @@
     width: 100%;
     left: 80%;
     height: 90vh;
-    background-image: url(./../img/banner.jpg);
-    background-size: cover;
 }
 
 .menu{
@@ -22,14 +20,6 @@
     justify-content: space-between;
     align-items: center;
     position:fixed
-}
-
-.banner{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .menu__logo{
@@ -80,71 +70,65 @@
     padding: 10px;
     display: block;
    justify-content: space-between;
-   margin-top: 60px;
+    margin-top: 60px;
 }
 
-.banner__titulo{
-    color: #ffffff;
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-
-.banner__subtitulo{
-    color: #ffffff;
-    font-size: 20px;
-}
-
-main{
-    width: 100%;
-    padding-left: 10%;
-    background-color: rgb(255, 255, 255);
-}
-
-.card-introducao, .container-trajetoria{
-    padding: 4%;
-}
-
-.card-introducao__titulo{
-    color: rgb(65, 63, 63);
-    font-size: 30px;
-    margin-bottom: 20px;
-    margin-top: 50px;
-}
-
-.container-texto{
-   display: flex;
-   align-items: flex-start;
-}
-
-.container-texto__paragrafo{
-   width: 60%;
-   margin-right: 10%;
-}
-
-.container-texto__paragrafo p{
+.introducao__titulo{
     color: black;
-    font-size: 17px;
-    margin-bottom: 17px;
-    text-align: justify;
-}
-
-.container-texto__imagem{
-    width: 30%;
-}
-
-.container-trajetoria__titulo{
-    color: rgb(65, 63, 63);
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.filmes-combo1{
+    display: flex;
+    margin-left: 15%;
+    list-style-type: none;
 
-.container-trajetoria__paragrafo p{
+}
+
+.filmes-combo1-repertorio__link{
+    display: flex;
     color: black;
-    font-size: 17px;
-    margin-bottom: 17px;
-    text-align: justify;
-    margin-right: 40%;
+}
+
+.filmes-combo1-repertorio__capa{
+    max-width: 300px;
+    max-height: 300px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.filmes-combo1-repertorio__nome{
+    display: inline-block;
+    width: 130px;
+    margin-top: 250px;
+}
+
+.filmes-combo2{
+    display: flex;
+    margin-left: 15%;
+    list-style-type: none; 
+}
+
+.filmes-combo2__link{
+    display: flex;
+    color: black;
+}
+
+.filmes-combo2__capa{
+    max-width: 300px;
+    max-height: 300px;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.filmes-combo2__nome{
+    display: inline-block;
+    width: 130px;
+    margin-top: 250px;
 }
 
 footer{
@@ -152,4 +136,5 @@ footer{
     padding: 10px;
     background-color: black;
     color: #ffffff;
+    margin-top: 160px;
 }

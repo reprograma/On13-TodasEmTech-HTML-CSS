@@ -48,6 +48,7 @@
     text-decoration: none;
     font-size: 20px;
     padding: 10px;
+    transition: 0.5s all;
 }
 
 .banner__titulo{
@@ -64,6 +65,8 @@
 main{
     width: 100%;
     background-color: rgb(243,239,239);
+    margin: 0 0;
+    padding: 3% 3%;
 }
 
 .card-introducao, .container-trajetoria, .card-gostos{
@@ -119,6 +122,12 @@ main{
     background-color: #A866AD;
     border-radius: 10px;
     padding: 16px;
+    transition: 0.5s all;
+    box-shadow: 5px 5px 9px #cccccc;
+}
+
+.listas:hover{
+    transform: scale(1.1);
 }
 
 .lista__h3{

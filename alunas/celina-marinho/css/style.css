@@ -8,8 +8,8 @@
 
 .cabecalho{
     width: 100%;
-    height: 80vh;
-    background: linear-gradient(rgba(116,44,126,0.5), rgba(167,92,204,0.7)), url(./../img/background.jpg) no-repeat;
+    height: 100vh;
+    background: linear-gradient(rgba(116,44,126,0.5), rgba(167,92,204,0.7)), url(./../img/dando\ aula.jpeg) no-repeat;
     background-size: cover;
 }
 
@@ -36,6 +36,12 @@
     color: #ffffff;
     text-decoration: none;
     font-size: 30px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.menu__logo:hover{
+    background-color: #86477e;
 }
 
 .menu-navegacao{
@@ -48,31 +54,42 @@
     text-decoration: none;
     font-size: 20px;
     padding: 10px;
+    transition: 0.5s all;
+    border-radius: 10px;
+}
+
+.menu-navegacao__link:hover{
+    background-color: #86477e;
 }
 
 .banner__titulo{
     color: #ffffff;
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 15px;
 }
 
 .banner__subtitulo{
     color: #ffffff;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 main{
     width: 90%;
-    background-color: rgb(243,239,239);
-    margin: 3% 5%;
+    background: linear-gradient(rgb(223, 219, 221), rgb(236, 186, 210), rgb(197, 131, 164));
+    margin:  3% 5%;
     border-radius: 10px;
-    box-shadow: 10px 10px #20171f;
+    box-shadow: 0px 0px 10px #b6b5b5;
 }
 
-.card-introducao, .container-trajetoria, .card-gostos{
-    width: 80%;
+.card-introducao, .container-trajetoria, .card-interesses{
     padding: 4%;
 }
+
+b{
+    font-size: 20px;
+    color:rgb(15, 15, 15)
+}
+
 
 .card-introducao__titulo{
     color: rgb(162,153,165);
@@ -91,14 +108,16 @@ main{
 }
 
 .container-texto__paragrafos p, .container-trajetoria__paragrafo p{
-    color: rgb(41, 39, 39);
+    color: rgb(15, 15, 15);
     font-size: 17px;
     margin-bottom: 17px;
     text-align: justify; 
 }
 
 .container-texto__imagem{
-    width: 30%;
+    width: 35%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px #810340
 }
 
 .container-trajetoria__titulo{
@@ -108,7 +127,7 @@ main{
     
 }
 
-.card-gostos__titulo{
+.card-interesses__titulo{
     font-size: 25px;
     color: #20171f;
     margin-bottom: 30px;
@@ -124,6 +143,12 @@ main{
     background-color: #A866AD;
     border-radius: 10px;
     padding: 16px;
+    transition: 0.5s all;
+    box-shadow: 5px 5px 9px #cccccc;
+}
+
+.lista:hover{
+    transform: scale(1.1);
 }
 
 .lista h3{
@@ -144,33 +169,90 @@ main{
     margin-right: 10px;
 }
 
+.redes{
+    display: flex;
+    justify-content: center;
+    margin-top: 62px;
+    padding: 16px;
+}
+
+
+.redes-links{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(187, 129, 158);
+    width: 8%;
+    height: 90px;
+    margin: 20px;
+    color:white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 15px #810340;
+    transition: 0.5s all;
+    
+}
+
+.redes-links:hover{
+    transform: scale(1.1);
+}
+
 footer{
     text-align: center;
     padding: 20px;
     background-color: #a36f9c;
 }
 
-.display-inline div{
-    display: inline;
-    background-color: blue;
-    width: 100px;
-    height: 100px;
+/* aside{
+    display: flex;
+} */
+
+.campo-form{
+    display: flex;
+    flex-direction: column;
 }
 
-.display-block div{
-    display: block;
-    width: 100px;
-    background-color: brown;
+form{
+    width: 70%;
+    border: 2px solid #502f4c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label, input, select{
+    margin-bottom: 10px;
+}
+
+fieldset{
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-botao{
+    display: flex;
+    justify-content: center;
+}
+
+.form-botao input{
+    border: 2px solid #ffffff;
+    background-color: #502f4c;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.card-vamos-conversar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-vamos-conversar h2,h3{
+    font-size: 25px;
     margin-bottom: 20px;
-    height: 100px;
+    color: #86477e;
+    align-items: center
 }
-
-.display-inline-block div{
-    display: inline-block;
-    width: 100px;
-    background-color: rgb(17, 85, 102);
-    margin-bottom: 20px;
-    height: 100px;
-}
-
 

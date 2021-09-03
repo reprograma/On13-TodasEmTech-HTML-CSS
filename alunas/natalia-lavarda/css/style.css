@@ -8,19 +8,19 @@
 
 .cabecalho {
     width: 100%;
-    height: 80vh;
-    background: linear-gradient(rgba(116, 44, 126, 0.5), rgba(167, 92, 204, 0.7)), url(./../img/background.jpg) no-repeat;
-    background-size: cover; /*faz com que a imagem estique e ocupe toda a caixa*/
+    height: 95vh;
+    background: linear-gradient(rgba(172, 149, 35, 0.5), rgba(218, 188, 42, 0.7)), url(./../img/girassol.jpg) no-repeat;
+    background-size: cover;
 }
 
 .menu {
     width: 100%;
-    background-color: #a36f9c;
+    background-color: #dabc2a;
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    height: 50px;
     align-items: center;
-    padding: 0 20px; /* topo direita sul esquerda */
+    padding: 0 20px;
     position: fixed;
 }
 
@@ -41,8 +41,13 @@
 .menu-navegacao__link {
     text-decoration: none;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px;
+    transition: 0.5s all;
+}
+
+.menu-navegacao__link:hover {
+    background-color: #ac9523;
 }
 
 .banner {
@@ -50,85 +55,109 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
+    margin-left: 2%;
 }
 
 .banner__titulo {
     color: #ffffff;
     font-size: 30px;
+    text-shadow: 1px 1px 2px #ac9523;
     margin-bottom: 15px;
+    text-align: left;
 }
 
 .banner__subtitulo {
     color: #ffffff;
     font-size: 20px;
+    text-shadow: 1px 1px 2px #ac9523;
+    width: 60%;
+    text-align: left;
+    font-weight: 500;
 }
 
 main {
-    width: 100%;
-    background-color: rgb(243, 239, 239) ;
+    width: 80%;
+    margin: 3% 5%;
+    background: linear-gradient(rgba(255, 249, 219, 0.856), rgba(216, 183, 17, 0.945));
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #cccccc; /*1º: eixo x, 2º: eixo y, 3º: desfoque, 4º: expansão da sombra*/
 }
 
-.card-introducao, .container-trajetoria, .card-gostos {
+.card-apresentacao, .container-autora, .card-livros {
     padding: 4%;
 }
 
-.card-introducao__titulo {
-    color: rgb(162, 153, 165);
+.card-apresentacao__titulo, .container-autora__titulo, .card-livros__titulo {
+    color: rgb(94, 83, 30);
     font-size: 30px;
-    margin-bottom: 20px;
 }
 
-.container-texto {
+.container-autora__titulo {
+    text-align: right;
+}
+
+.container-resumo, .container-biografia {
     display: flex;
     align-items: center;
 }
 
-.container-texto__paragrafos {
-    width: 60%;
-    margin-right: 10%;
+.container-biografia {
+    flex-direction: row-reverse;
 }
 
-.container-texto__paragrafos p, .container-trajetoria__paragrafos p {
+.container-autora__paragrafos p, .container-resumo__paragrafos p {
     color: rgb(41, 39, 39);
-    font-size: 17px;
-    margin-bottom: 17px;
+    font-size: 16px;
     text-align: justify;
+    width: 95%;
 }
 
-.container-texto__imagem {
-    width: 30%;
+.container-autora__paragrafos p {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.container-trajetoria__titulo {
-    font-size: 25px;
-    margin-bottom: 30px;
-    color: #502f4c;
+.container-resumo__imagem, .container-autora__imagem {
+    height: 300px;
 }
 
-.card-gostos__titulo {
-    font-size: 25px;
-    color: #20171f;
-    margin-bottom: 20px;
+.card-livros__titulo {
+    margin-bottom: 10px;
+    margin-left: 11%;
 }
 
 .container-listas {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 60px;
 }
 
 .lista {
-    width: 30%;
-    background-color: #a866ad;
-    border-radius: 10px;
-    padding: 16px;
+    width: 28%;
+    background-color: #ac9523;
+    border-radius: 5px;
+    padding: 12px;
+    transition: 0.5s all;
+    box-shadow: 3px 3px 9px #97831e;
 }
 
 .lista h3 {
     color: #fff;
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: 500;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.lista a {
+    text-decoration: none;
+    color: #302803;
+    font-weight: 400;
+}
+
+.lista:hover {
+    transform: scale(1.1);
 }
 
 .lista__item li {
@@ -142,30 +171,106 @@ main {
     margin-right: 10px;
 }
 
+.card-vamos-conversar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-vamos-conversar h2 {
+    color: rgb(94, 83, 30);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.card-vamos-conversar p {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 65%;
+    border: 2px solid rgb(94, 83, 30);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+label, input {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input::placeholder, textarea::placeholder {
+    padding: 5px;
+}
+
+textarea {
+    margin-bottom: 10px;
+}
+
+input:focus, textarea:focus {
+    outline: 0;
+    padding: 5px;
+}
+
+fieldset {
+    border: 2px solid rgb(94, 83, 30);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+fieldset legend {
+    font-weight: 600;
+    padding: 10px;
+}
+
+fieldset input {
+    margin: 10px;
+}
+
+.checkbox-lancamentos input {
+    margin-left: 10px;
+}
+
+.form-botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.form-botao input {
+    border: 0;
+    box-shadow: 1px 1px 2px rgb(94, 83, 30);
+    background-color: rgb(94, 83, 30);
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.form-botao input:hover {
+    transform: scale(1.1);
+}
+
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #a36f9c;
+    background-color: #dabc2a;
+    color: #fff;
 }
 
-.display-inline div{
-    display: inline; /*não deixa aumentar o tamanho (largura e altura) - será exatamente o tamanho do conteúdo*/
-    background-color: blue;
-    width: 100px;
-}
-
-.display-block div{
-    display: block;
-    background-color: red;
-    width: 350px; /*se não tiver width, ocupa a largura total do container*/
-    margin-bottom: 20px;
-    height: 100px;
-}
-
-.display-inline-block div{
-    display: inline-block;
-    background-color: yellow;
-    width: 350px; /*se não tiver width, ocupa o tamanho do conteúdo interno*/
-    margin-bottom: 20px;
-    height: 100px;
+footer p {
+    font-size: 18px;
 }

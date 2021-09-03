@@ -8,7 +8,7 @@
 
 .cabecalho{
     width: 100%;
-    height: 80vh;
+    height: 77vh;
     background: linear-gradient(rgba(83, 179, 243, 0.5), rgba(13, 15, 105, 0.7)), url(./../img/qg.jpeg) no-repeat;
     background-size: cover;
 }

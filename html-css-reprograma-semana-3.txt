@@ -1,0 +1,529 @@
+<------------------------------------------------AULA 28 DE AGOSTO - HTML E CSS - TURMA ON13 FRONT-END---------------------------------------------------------------->
+
+
+<---------------------------------------------------------------Espaço para dúvidas Pra Quarta-feira------------------------------------------------------------------------------->
+
+
+
+
+
+
+<------------------------------------------------------------------Código HTML------------------------------------------------------------------------------->
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <!-- Aqui vai ser incluída informações não visíveis ao usuário -->
+            <meta charset="UTF-8">
+            <title>Super Aluna {Reprograma}</title>
+            <link rel="stylesheet" href="./css/style.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,200;1,700&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+            <header class="cabecalho">
+
+                <nav class="menu">
+                    <a href="" class="menu__logo">{ }</a>
+                    <ul class="menu-navegacao">
+                        <li><a href="#super-aluna" class="menu-navegacao__link">Super Aluna</a></li>
+                        <li><a href="#trajetoria" class="menu-navegacao__link">Trajetória</a></li>
+                        <li><a href="#fale-conosco" class="menu-navegacao__link">Fale Conosco</a></li>
+                    </ul>
+                </nav>
+            
+                <div class="banner" >
+                    <h1 class="banner__titulo" >Olá, eu sou a super Aluna {Reprograma}</h1>
+                    <p class="banner__subtitulo" >Tá passada?Vem conhecer um pouco sobre o meu mundo</p> 
+                </div>
+
+            </header>
+            <main>
+                <section class="card-introducao" id="super-aluna">
+                    <h2 class="card-introducao__titulo">Um pouco sobre o meu mundinho...</h2>
+                    <div class="container-texto">
+                        <div class="container-texto__paragrafos">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque rerum alias nihil, recusandae odio, ex odit deserunt adipisci tenetur qui reprehenderit facere eveniet eaque, cumque quibusdam veritatis a incidunt?</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero sapiente illum et recusandae odio sed officia fugiat quas, magni doloremque tenetur laboriosam atque id. Alias autem hic amet eum delectus.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt veniam dignissimos voluptate repellendus? Neque quia esse similique odio, magnam pariatur nihil nobis harum temporibus? Qui sapiente quasi laudantium voluptates cumque.</p>
+                        </div>
+                        <img src="./img/menina-globo.png" alt="Menina segurando o globo" class="container-texto__imagem">
+                    </div>
+                </section>
+                <section class="container-trajetoria" id="trajetoria">
+                    <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a minha trajetória nessa vida...</h2>
+                    <div class="container-trajetoria__paragrafo">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium culpa, sequi, doloribus totam quo ipsa laborum, alias error cumque nisi temporibus? Laborum ea dignissimos neque adipisci tenetur fugiat nostrum optio?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit delectus aspernatur, esse, doloremque animi nihil vel quia eum nulla voluptatibus in temporibus? Doloribus illum, sequi ea aliquid nisi ratione voluptate?</p>
+        
+                    </div>
+
+                </section>
+                <section class="card-gostos">
+                    <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
+                    <div class="container-listas">
+                        <div class="lista">
+                            <h3>Amo viajar, e tenho uma listinha de quais países quero conhecer:</h3>
+                            <ul class="lista__item">
+                                <li>pais 1</li>
+                                <li>pais '2</li>
+                                <li>pais 3</li>
+                                <li>pais 4</li>
+                                <li>pais 5</li>
+                            </ul>
+                        </div>
+                        <div class="lista">
+                            <h3>Amo ouvir música. Confira as minhas musicas favoritas:</h3>
+                            <ul class="lista__item">
+                                <li>música 1</li>
+                                <li>música 2</li>
+                                <li>música 3</li>
+                                <li>música 4</li>
+                                <li>música 5</li>
+                            </ul>
+
+                        </div>
+                        <div class="lista">
+                            <h3>Amo ler, e esses são os meus livros preferidos:</h3>
+                            <ul class="lista__item">
+                                <li>Livro 1</li>
+                                <li>Livro 2</li>
+                                <li>Livro 3</li>
+                                <li>Livro 4</li>
+                                <li>Livro 5</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </section>
+                <section class="card-fale-conosco" id="fale-conosco">
+                    <h2>Fale conosco</h2>
+                    <form>
+                        <div class="campo-form">
+                            <label for="nome">Nome completo:</label>
+                            <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+                            
+                            <label for="idade">Qual a sua idade?:</label>
+                            <input id="idade" type="number" name="idade" min="0" max="120" value="0" required>
+                            
+                            <label for="email">Digite o seu email:</label>
+                            <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
+
+                            <label for="telefone">Digite o seu telefone:</label>
+                            <input  id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+                            <label for="mensagem">Digite a dia mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+                            <label for="comidas">Qual a sua comida favorita?</label>
+                            <select name="comidas-que-eu-gosto" id="comidas">
+                                <option value="coxinha">Coxinha</option>
+                                <option value="hamburguer">Hambúrguer</option>
+                                <option value="pizza">Pizza</option>
+                            </select>
+                        </div>
+                        <fieldset>
+                            <legend>Como podemos entrar em contato com você?</legend>
+                            <div>
+                                <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                                <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                                <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                            </div>     
+                        </fieldset>
+                        <div>
+                            <input type="checkbox" checked><label>Concorda que você é maravilhosa?</label>
+                        </div>
+                        <div class="form-botao">
+                            <input type="submit" value="Enviar formulário">
+                        </div>
+                    </form>
+
+                </section>
+
+                <section>
+                    <h2>Explicando os display</h2>
+
+                    <h3>Display inline</h3>
+
+                    <div class="display-inline">
+                        <div>caixa 1</div>
+                        <div>caixa 2</div>
+                        <div>caixa 3</div>
+                    </div>
+
+                    <h4>Display block</h4>
+                    <div class="display-block">
+                        <div>caixa 1</div>
+                        <div>caixa 2</div>
+                        <div>caixa 3</div>
+                    </div>
+
+                    <h4>Display inline-block</h4>
+                    <div class="display-inline-block">
+                        <div>caixa 1</div>
+                        <div>caixa 2</div>
+                        <div>caixa 3</div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p>Site desenvolvido por Juliane Andrade - Aula {Reprograma} | © Copyright 2021</p>
+            </footer>
+            
+        </body>
+    </html>
+<-----------------------------------------------------------------------------CSS------------------------------------------------------------------------------->
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(116,44,126,0.5), rgba(167,92,204,0.7)), url(./../img/background.jpg) no-repeat;
+    background-size: cover;
+}
+
+.menu{
+    width: 100%;
+    background-color: #a36f9c;
+    display: flex; 
+    justify-content:space-between; 
+    height: 60px;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    
+} 
+.banner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.menu__logo{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.menu-navegacao{
+    display: flex;
+    list-style: none;
+}
+
+.menu-navegacao__link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.5s all;
+    border-radius: 10px;
+}
+
+.menu-navegacao__link:hover{
+    background-color: #86477e;
+}
+
+.banner__titulo{
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.banner__subtitulo{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+main{
+    width: 90%;
+    background: linear-gradient(rgba(255, 251, 255, 0.5),rgba(199, 100, 216, 0.6));
+    margin: 3% 5%;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px  #cccccc; 
+}
+
+.card-introducao, .container-trajetoria, .card-gostos{
+    padding: 4%;
+}
+
+.card-introducao__titulo{
+    color: rgb(162,153,165);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container-texto{
+    display: flex;
+    align-items: center;
+}
+
+.container-texto__paragrafos{
+    width: 60%;
+    margin-right: 10%;
+}
+
+.container-texto__paragrafos p, .container-trajetoria__paragrafo p{
+    color: rgb(41, 39, 39);
+    font-size: 17px;
+    margin-bottom: 17px;
+    text-align: justify; 
+}
+
+.container-texto__imagem{
+    width: 30%;
+}
+
+.container-trajetoria__titulo{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #502f4c;
+}
+
+.card-gostos__titulo{
+    font-size: 25px;
+    color: #20171f;
+    margin-bottom: 30px;
+}
+
+.container-listas{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.lista{
+    width: 30%;
+    background-color: #A866AD;
+    border-radius: 10px;
+    padding: 16px;
+    transition: 0.5s all;
+    box-shadow: 5px 5px 9px #cccccc;
+}
+
+.lista:hover{
+    transform: scale(1.1);
+    
+}
+
+
+
+.lista h3{
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lista__item li{
+    color: #ffffff;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.lista__item li::before{
+    content: "❤";
+    margin-right: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #a36f9c;
+}
+
+.display-inline div{
+    display: inline;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.display-block div{
+    display: block;
+    width: 100px;
+    background-color: brown;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.display-inline-block div{
+    display: inline-block;
+    width: 100px;
+    background-color: rgb(17, 85, 102);
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.campo-form{
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    width: 70%;
+    border: 2px solid #502f4c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label, input{
+    margin-bottom: 10px;
+}
+
+fieldset{
+    border: 2px solid #502f4c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-botao{
+    display: flex;
+    justify-content: center;
+}
+
+.form-botao input{
+    border: 2px solid #ffffff;
+    background-color: #502f4c;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.card-fale-conosco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-fale-conosco h2{
+    font-size: 25px;
+    color: #86477e;
+    margin-bottom: 20px;
+}
+<---------------------------------------------------------------Contato das professora e monitoras------------------------------------------------------------------------------->
+
+Professora - Juliane Andrade - linkedin: https://www.linkedin.com/in/juliane-andrade-837a05113/
+
+{monitora} - Kamila Almeida - https://www.linkedin.com/in/kamilaalmeidaksa/
+
+{monitora} - Rebeca - https://www.linkedin.com/in/rebeca-ferreira-b3b3a3214/
+
+
+<-----------------------------------------------------------Espaço para compartilhamento de Links úteis------------------------------------------------------------------------------->
+
+
+Link do repositório da aula no github
+https://github.com/reprograma/On13-TodasEmTech-HTML-CSS
+
+Unidades de medidas no CSS : rem, vh, vw, wmin...
+https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/
+
+
+FLEXBOX:
+
+Guia completo flexbox (em inglês mas ativa o tradutor qualquer coisa ;D )
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+Site para você usar pra flexbox 
+encurtador.com.br/dlQ19
+
+Site Flexplorer em que vc pode ver como o flexbox funciona com listas
+https://bennettfeely.com/flexplorer/ 
+
+Pra brincar e gerar seu código do flexbox
+encurtador.com.br/dlQ19
+
+YouTube:
+
+O que é Flexbox e como usar
+https://youtu.be/ssc-cJZJrlI?t=106 
+
+Flexbox tudo o que vc precisa saber
+https://youtu.be/WBMN-PcwqG8
+
+JOGO DO SAPO
+
+Flexbox Froggy como usar o joguinho pra aprender Flexbox
+https://youtu.be/7uGDoJN0tAA
+
+
+
+efeitos que o CSS pode ver fazer em imagens
+https://bennettfeely.com/image-effects/
+
+
+COMPARADOR: 
+
+Compare seu código com outro:
+https://www.invertexto.com/comparar-textos
+
+
+ATALHOS: 
+
+Windows ▌ Todos os atalhos do VS Code no Windows:
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+
+MAC ▌ Todos os atalhos do VS Code no MacOS:
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf
+
+Linux ▌ Todos os atalhos do VS Code no Linux: 
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf
+
+Como ativar as sugestões/Intellisense do VS Code: 
+https://code.visualstudio.com/docs/editor/intellisense
+
+
+COMO SUBIR  PARA O GITHUB A  ATIVADE DA SEMANA JÁ FEITA 
+
+████ Passos para atualizar o GitHub através do Git: ████
+
+Já fiz tudo o que eu tinha q fazer no meu projeto da semana e agora vou:
+
+
+git status 
+
+(comando pra verificar os arquivos que foram alterados)
+
+
+➡️ depois vou adicionar tudo o que fiz então:
+
+git add .  
+
+(comando pra adicionar os arquivos alterados)
+
+
+➡️ adicionei os arquivos que mexi agora vou comitar minhas alterações:
+
+
+git commit -m "nome-do-commit" 
+ 
+(comando pra adicionar seu commit, exemplo de commit: "atividade semana 32 por fulana."  atenção seu commit sempre ficará entre "aspas" )
+
+
+➡️ agora vou ver se ficou verdinho se tudo certo:
+
+git status 
+
+
+➡️ agora que eu vi que tá tudo verdinho e vou jogar pra minha branch:
+
+
+git push origin nome-da-minha-branch
+
+
+➡️ joguei pra minha branch e deu certinho então agora vou lá no meu GitHub 
+e vou no repositório q mexi(fiz as alterações da semana) e clico em:
+
+Compare e Pull Request
+
+
+pego o link da url do navegador e entrego pelo classroom

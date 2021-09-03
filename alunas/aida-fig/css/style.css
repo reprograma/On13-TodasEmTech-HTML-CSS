@@ -68,7 +68,7 @@
 main{
     margin: 3% auto;
     width: 90%;
-    background: linear-gradient(rgba(255, 251, 255, 0.5), rgba(199, 100, 216, 0.6));
+    background: linear-gradient(rgba(170, 134, 100, 0.5), rgba(194, 92, 61, 0.7));
     border-radius: 10px;
     box-shadow:0px 0px 10px #cccccccc;
 
@@ -169,9 +169,14 @@ footer{
     display: flex;
     flex-direction: column;
 }
-
+.card-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 form{
-    width: 70%;
+    width: 40%;
     border: 2px solid #502f4c;
     padding: 20px;
     border-radius: 10px;
@@ -181,11 +186,6 @@ label, input{
     margin-bottom: 10px;
 }
 
-fieldset{
-    border: 2px solid #502f4c;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
 .form-botao{
     display: flex;

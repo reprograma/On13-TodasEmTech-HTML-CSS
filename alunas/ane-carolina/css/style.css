@@ -71,7 +71,7 @@
 main{
     width: 100%;
     background-color: linear-gradient(rgba(97, 63, 102, 0.233), rgba(243,239,239));
-    margin: 3% 5%;
+    margin: 1% -1%;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #585658;
 }
@@ -104,7 +104,7 @@ main{
 }
 
 .container-texto__imagem{
-    width: 30%;
+    width: 20%;
 }
 
 .container-trajetoria__titulo{
@@ -178,6 +178,7 @@ form{
     border: 2px solid #a866ad;
     padding: 30px;
     border-radius: 10px;
+    
 
 
 }
@@ -209,6 +210,7 @@ fieldset{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .card-fale-conosco h2{

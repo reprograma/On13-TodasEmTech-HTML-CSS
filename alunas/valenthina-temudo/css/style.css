@@ -12,7 +12,7 @@
 
     .cabecalho{
         width: 100%;
-        height: 70vh;
+        height: 80vh;
         background: linear-gradient(rgba(254, 234, 250,0.5), rgba(222, 226, 255, 0.5)), url(./../img/butterfly-1266420_1920.jpg) no-repeat;
         background-size: cover;
     }
@@ -74,38 +74,9 @@
     main{
         width: 90%;
         background-color: #CBC0D3;
-        display: flex;
         margin: 3% 5%;
         border-radius: 10px;
         box-shadow: 5px 5px 10px rgb(181, 175, 175);
-    }
-
-
-    .container-1{
-        width: 50%;
-        background-color: #8E9AAF;
-        border-radius: 50px;
-        padding: 10px;
-        margin-left: 50px;
-        margin: 10px;
-    }
-
-    .container-2{
-        width: 50%;
-        background-color: #8E9AAF;
-        border-radius: 50px;
-        padding: 10px;
-        margin-right: 50px;
-        margin: 10px;
-    }
-
-    .container-3{
-        width: 50%;
-        background-color: #8E9AAF;
-        border-radius: 50px;
-        padding: 10px;
-        margin-top: 50px;
-        margin: 10px;
     }
 
     .card-introducao, .container-trajetoria, .card-gostos{
@@ -128,59 +99,21 @@
         margin-right: 10%;
     }
 
-    .container-texto__paragrafo p{
+    .container-texto__paragrafo p, .container-trajetoria__paragrafo p{
         color: rgb(41,39,39);
         font-size: 17px;
         margin-bottom: 17px;
         text-align: justify;
-        margin-top: 50px;
     }
 
-    .container-texto__paragrafo ul{
-        display: flex;
-        justify-content: center;
+    .container-texto__imagem{
+        width: 30%;
     }
-
-    .container-texto__paragrafo ul li{
-        background: linear-gradient(rgb(255, 175, 204),rgb(201, 141, 141));
-        width: 100px;
-        text-align: center;
-        margin-left: 10px;
-        color: white;
-        padding: 10px;
-        font-size: 8px;
-        border-radius: 10px;
-        margin-top: 50px;
-    }
-
-    .container-texto__paragrafo ul li a{
-        text-decoration: none;
-        color: white;
-    }
-
-    .container-texto__paragrafo ul li img{
-        width: 50px;
-    }
-
-    .container-texto__paragrafo ul li a h3{
-        margin: 10px;
-        text-align: center;
-    }
-
 
     .container-trajetoria__titulo{
         font-size: 25px;
         margin-bottom: 30px;
         color: black;
-        margin-top: 50px;
-    }
-
-    .container-trajetoria__paragrafo p{
-        color: rgb(41,39,39);
-        font-size: 17px;
-        margin-bottom: 17px;
-        text-align: justify;
-        margin-top: 50px;
     }
 
     .card-gostos__titulo{
@@ -190,18 +123,16 @@
     }
 
     .container-listas{
-        display:table-row;
+        display:flex;
         justify-content:space-between;
     }
 
 
     .lista{
-        width: 80%;
+        width: 30%;
         background: linear-gradient(rgb(255, 175, 204),rgb(201, 141, 141));
         border-radius: 10px;
         padding: 16px;
-        margin: 10%;
-        justify-content: center;
         transition: 0.5s all;
         box-shadow: 5px 5px 9px rgb(141, 138, 138);
     }

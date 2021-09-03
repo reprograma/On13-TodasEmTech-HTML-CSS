@@ -15,9 +15,9 @@
             <nav class="menu">
                 <a href="" class="menu__logo">{ }</a>
                 <ul class="menu-navegacao">
-                    <li><a href="#" class="menu-navegacao__link"> Super Aluna </a></li>
-                    <li><a href="#" class="menu-navegacao__link"> Trajetória </a></li>
-                    <li><a href="#" class="menu-navegacao__link"> Fale Conosco </a></li>
+                    <li><a href="#super-aluna" class="menu-navegacao__link"> Super Aluna </a></li>
+                    <li><a href="#trajetoria" class="menu-navegacao__link"> Trajetória </a></li>
+                    <li><a href="#fale-conosco" class="menu-navegacao__link"> Fale Conosco </a></li>
                 </ul>
             </nav>
         
@@ -28,7 +28,7 @@
 
         </header>
         <main>
-            <section class="card-introducao">
+            <section class="card-introducao" id="super-aluna">
                 <h2 class="card-introducao__titulo">Um pouco sobre o meu mundinho...</h2>
                 <div class="container-texto">
                     <div class="container-texto__paragrafos">
@@ -43,7 +43,7 @@
                 </div>
             </section >
 
-            <section class="container-trajetoria">
+            <section class="container-trajetoria" id="trajetoria">
                 <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a tragetória da minha vida...</h2>
                 <div class="container-trajetoria__paragrafo">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium autem voluptas dicta. Maxime voluptate eveniet accusamus ab? Perferendis officiis vitae amet dicta commodi! Alias amet maiores atque nesciunt, autem quod.</p>
@@ -57,11 +57,11 @@
                     <div class="lista">
                         <h3>Amo viajar, e tenho uma listinha de quais países quero conhecer:</h3>
                         <ul class="lista__item">
-                            <li>pais 1</li>
-                            <li>pais 2</li>
-                            <li>pais 3</li>
-                            <li>pais 4</li>
-                            <li>pais 5</li>
+                            <li>país 1</li>
+                            <li>país 2</li>
+                            <li>país 3</li>
+                            <li>país 4</li>
+                            <li>país 5</li>
                         </ul>
                     </div>
                     <div class="lista">
@@ -87,6 +87,52 @@
 
                     </div>
                 </div>
+
+            </section>
+            <section class="card-fale-conosco" id="fale-conosco">
+                <h2>Fale Conosco</h2>
+                <form>
+                    <div class="campo-form">
+                        <label for="nome"> Nome Completo:</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo." required>
+
+                        <label for="email">E-mail:</label>
+                        <input id="email" type="email" name="email" placeholder="seuemail@dominio.com" required>
+
+                        <label for="tel">Telefone:</label>
+                        <input id="tel" type="tel" name="telefone" placeholder="(xx) x xxxx-xxxx" required>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+                        
+                        <label for="comidas">Qual a sua comida favorita?</label>
+                        <select name="comidas_que_eu_gosto" id="comidas">
+                            <option value="coxinha">Coxinha</option>
+                            <option value="pizza">Pizza</option>
+                            <option value="cachorro quente">Cachorro quente</option>
+                        </select>
+
+                    </div>
+
+                    <fieldset>
+                        <legend>Como podemo entrar em contato com você?</legend>
+                        <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                        <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                        <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                    </fieldset>
+
+                    <div>
+                        <input type="checkbox" checked><label for="">Concorda que você é maravilhosas?</label>
+                    </div>
+
+                    <div class="form-botao">
+                        <input type="submit" value="Enviar formulário">
+                    </div>
+
+                </form>
+
+            </section>
+            <section>
 
             </section>
         </main>

@@ -9,33 +9,52 @@
 .cabecalho{
   width: 100%;
   height: 80vh;
-  background: linear-gradient(rgba(116,44,126,0.5), rgba(167,92,204,0.7)), url(./../img/background.jpg) no-repeat;
+  background: linear-gradient(rgba(63, 5, 70, 0.83), rgba(150, 11, 219, 0.7)), url(./../img/bg.jpg) no-repeat;
   background-size: cover;
 }
 
 .menu{
   width: 100%;
-  background-color: #a36f9c;
+  background-color: rgba(101, 12, 112);
   display: flex; 
   justify-content:space-between; 
   height: 60px;
   align-items: center;
   padding: 0 20px;
   position: fixed;
+  box-shadow: 0px 0px 5px  #cccccc;
+
   
 } 
+
+.menu img{
+  max-width: 55px;
+}
+
 .banner{
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+  justify-content: center;
+  
 }
 
-.menu__logo{
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 30px;
+.banner__titulo-subtitulo{
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  text-align: center;
+  text-shadow: #851285 0.1em 0.2em 0.2em;
+
+}
+
+.banner__img{
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px  #cccccc;
 }
 
 .menu-navegacao{
@@ -58,13 +77,13 @@
 
 .banner__titulo{
   color: #ffffff;
-  font-size: 30px;
+  font-size: 35px;
   margin-bottom: 15px;
 }
 
 .banner__subtitulo{
   color: #ffffff;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 main{
@@ -157,27 +176,13 @@ main{
   margin-right: 10px;
 }
 
-footer{
-  text-align: center;
-  padding: 20px;
-  background-color: #a36f9c;
-}
-
-.display-inline div{
-  display: inline;
-  background-color: blue;
-  width: 100px;
-  height: 100px;
-}
-
-
 .campo-form{
   display: flex;
   flex-direction: column;
 }
 
 form{
-  width: 70%;
+  width: 60%;
   border: 2px solid #502f4c;
   padding: 20px;
   border-radius: 10px;
@@ -198,6 +203,14 @@ fieldset{
   justify-content: center;
 }
 
+.botao{
+  transition: 0.3s;
+}
+.botao:hover{
+  cursor: pointer;
+  background-color: #86477e;
+}
+
 .form-botao input{
   border: 2px solid #ffffff;
   background-color: #502f4c;
@@ -207,14 +220,42 @@ fieldset{
 
 }
 
-.card-fale-conosco{
+.card-fale-comigo{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly; 
+
 }
 
-.card-fale-conosco h2{
+.card-fale-comigo h2{
   font-size: 25px;
   color: #86477e;
   margin-bottom: 20px;
+}
+
+.card-fale-comigo__redes{
+
+  display: flex;
+  flex-direction: arrow;
+  align-items: center;
+  justify-content: center; 
+}
+
+.card-fale-comigo__redes li{
+list-style: none;
+padding: 10px;
+
+}
+
+.card-fale-comigo__redes a, .lista a{
+  text-decoration: none;
+
+}
+
+footer{
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(43, 8, 48);
+  color: #ffffff;
 }

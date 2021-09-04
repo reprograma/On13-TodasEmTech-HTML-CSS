@@ -1,4 +1,3 @@
-<-----------------------------------------------------------------------------CSS------------------------------------------------------------------------------->
 *{
     margin: 0;
     padding: 0;
@@ -9,19 +8,19 @@
 
 .cabecalho{
     width: 100%;
-    height: 80vh;
-    background: linear-gradient(rgba(116,44,126,0.5), rgba(167,92,204,0.7)), url(./../img/background.jpg) no-repeat;
+    height: 100vh;
+    background: url(./../img/web.jpg) no-repeat;
     background-size: cover;
 }
 
 .menu{
     width: 100%;
-    background-color: #a36f9c;
+    background-color:rgb(53, 6, 63);
     display: flex; 
     justify-content:space-between; 
     height: 60px;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 10px;
     position: fixed;
     
 } 
@@ -36,12 +35,13 @@
 .menu__logo{
     color: #ffffff;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .menu-navegacao{
     display: flex;
     list-style: none;
+    margin-right: 50px;
 }
 
 .menu-navegacao__link{
@@ -54,13 +54,14 @@
 }
 
 .menu-navegacao__link:hover{
-    background-color: #86477e;
+    background-color: #eb94df;
 }
 
 .banner__titulo{
     color: #ffffff;
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .banner__subtitulo{
@@ -69,21 +70,24 @@
 }
 
 main{
-    width: 90%;
-    background: linear-gradient(rgba(255, 251, 255, 0.5),rgba(199, 100, 216, 0.6));
-    margin: 3% 5%;
-    border-radius: 10px; 
+    width: 98%;
+    background: linear-gradient(rgba(90, 51, 90, 0.479),rgba(210, 115, 247, 0.6));
+    margin: 0% 0.9%;
+    border-radius: 5px; 
     box-shadow: 0px 0px 10px  #cccccc; 
 }
 
 .card-introducao, .container-trajetoria, .card-gostos{
     padding: 4%;
+    
 }
 
 .card-introducao__titulo{
-    color: rgb(162,153,165);
+    color: rgb(19, 13, 20);
     font-size: 30px;
-    margin-bottom: 20px;
+    margin: 25px;
+    padding: 30px;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .container-texto{
@@ -91,9 +95,11 @@ main{
     align-items: center;
 }
 
+
 .container-texto__paragrafos{
-    width: 60%;
-    margin-right: 10%;
+    width: 75%;
+    margin-right: 5%;
+    line-height: 1.5;
 }
 
 .container-texto__paragrafos p, .container-trajetoria__paragrafo p{
@@ -104,7 +110,7 @@ main{
 }
 
 .container-texto__imagem{
-    width: 30%;
+    width: 10%;
 }
 
 .container-trajetoria__titulo{
@@ -233,6 +239,35 @@ fieldset{
     font-size: 25px;
     color: #86477e;
     margin-bottom: 20px;
+}
+.redes li a {
+    height: 30px;
+    width: 30px;
+    display: block;
+    
+}
+footer {
+    padding: 20px 0px;
+}
+.redes {
+    bottom: 12px;
+    right: 150px;
+}
+#rodape {
+    position: relative;
+    bottom: 12px;
+}
+.redes li {
+    float: left;
+    margin-left: 25px;
+    margin-bottom: 27px;
+    text-decoration: none;
+    
+}
+.redes a {
+    margin-left: 20px;
+    text-decoration: none;
+    
 }
 /*
 <---------------------------------------------------------------Contato das professora e monitoras------------------------------------------------------------------------------->

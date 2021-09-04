@@ -8,14 +8,14 @@
 
 .cabecalho{
     width: 100%;
-    height: 80vh;
-    background: linear-gradient(rgba(116,44,126,0.5), rgba(167,92,204,0.7)), url(../img/background.jpg) no-repeat;
+    height: 100vh;
+    background:  url(../img/bg.jpeg) no-repeat;
     background-size: cover;
 }
 
 .menu{
     width: 100%;
-    background-color: #a36f9c;
+    background-color: #6bc6b3;
     display: flex; 
     justify-content:space-between; 
     height: 60px;
@@ -53,7 +53,7 @@
 }
 
 .menu-navegacao__link:hover{
-    background-color: #86477e;
+    background-color: #a9ddd2;
 }
 
 .banner__titulo{
@@ -69,7 +69,7 @@
 
 main{
     width: 90%;
-    background: linear-gradient(rgba(255, 251, 255, 0.5),rgba(199, 100, 216, 0.6));
+    background: linear-gradient(rgba(255, 251, 255, 0.5),rgba(107, 198, 179, 0.6));
     margin: 3% 5%;
     border-radius: 10px; 
     box-shadow: 0px 0px 10px  #cccccc; 
@@ -144,16 +144,16 @@ main{
 
 .lista{
     width: 30%;
-    background-color: #A866AD;
+    background-color: #aaddd2;
     border-radius: 10px;
     padding: 16px;
     transition: 0.5s all;
     box-shadow: 5px 5px 9px #cccccc;
+    font-weight: 600;
 }
 
 .lista:hover{
     transform: scale(1.1);
-    
 }
 
 .lista h3{
@@ -177,30 +177,7 @@ main{
 footer{
     text-align: center;
     padding: 20px;
-    background-color: #a36f9c;
-}
-
-.display-inline div{
-    display: inline;
-    background-color: blue;
-    width: 100px;
-    height: 100px;
-}
-
-.display-block div{
-    display: block;
-    width: 100px;
-    background-color: brown;
-    margin-bottom: 20px;
-    height: 100px;
-}
-
-.display-inline-block div{
-    display: inline-block;
-    width: 100px;
-    background-color: rgb(17, 85, 102);
-    margin-bottom: 20px;
-    height: 100px;
+    background-color: #6bc6b3;
 }
 
 .campo-form{
@@ -210,14 +187,14 @@ footer{
 
 form{
     width: 70%;
-    border: 2px solid #502f4c;
+    border: 2px solid #526c66;
     padding: 20px;
     border-radius: 10px;
      margin-bottom: 40px;
 }
 
 fieldset{
-    border: 2px solid #502f4c;
+    border: 2px solid #526c66;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -229,11 +206,15 @@ fieldset{
 
 .form-botao input{
     border: 2px solid #ffffff;
-    background-color: #502f4c;
+    background-color: #6bc6b3;
     color: #ffffff;
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
+}
+
+.form-botao input:hover{
+    transform: scale(1.1);
 }
 
 .card-fale-conosco{
@@ -244,6 +225,6 @@ fieldset{
 
 .card-fale-conosco h2{
     font-size: 25px;
-    color: #86477e;
+    color: #6bc6b3;
     margin-bottom: 20px;
 }

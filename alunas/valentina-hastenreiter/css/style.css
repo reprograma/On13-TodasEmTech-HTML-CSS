@@ -6,16 +6,20 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.cabecalho{
+body {
+    background: #f2e9e4;
+}
+
+.cabecalho {
     width: 100%;
     height: 80vh;
-    background: linear-gradient(rgba(116,44,126,0.5), rgba(167,92,204,0.7)), url(./../img/background.jpg) no-repeat;
+    background: linear-gradient(rgba(74, 78, 105,0.5), rgba(74, 78, 105,0.5)), url(./../img/bg.jpg) no-repeat;
     background-size: cover;
 }
 
-.menu{
+.menu {
     width: 100%;
-    background-color: #a36f9c;
+    background-color: #22223B;
     display: flex; 
     justify-content:space-between; 
     height: 60px;
@@ -24,7 +28,8 @@
     position: fixed;
     
 } 
-.banner{
+
+.banner {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -32,20 +37,20 @@
     align-items: center; 
 }
 
-.menu__logo{
+.menu__logo {
     color: #ffffff;
     text-decoration: none;
     font-size: 30px;
 }
 
-.menu-navegacao{
+.menu-navegacao {
     display: flex;
     list-style: none;
     
     
 }
 
-.menu-navegacao__link{
+.menu-navegacao__link {
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
@@ -56,36 +61,34 @@
 }
 
 .menu-navegacao__link:hover {
-    background-color: #86477e;
+    background-color: #4A4E69;
 }
 
 
-.banner__titulo{
+.banner__titulo {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 15px;
 }
 
-.banner__subtitulo{
+.banner__subtitulo {
     color: #ffffff;
     font-size: 20px;
 }
 
-main{
+main {
     width: 90%;
-    background-color: rgb(243,239,239);
-    background: linear-gradient( rgba(255,251,255,0.5), rgba(199,100,216,0.6));
+    background: #f2e9e4;
     margin: 3% 5%;
     border-radius: 10px;
-    box-shadow: 0px 0px 0px #20171f;
 }
 
-.card-introducao, .container-trajetoria, .card-gostos{
+.card-introducao, .container-trajetoria, .card-gostos, .container-desenvolvimento1{
     padding: 4%;
 }
 
 .card-introducao__titulo{
-    color: rgb(162,153,165);
+    color: #22223B;
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -100,8 +103,8 @@ main{
     margin-right: 10%;
 }
 
-.container-texto__paragrafos p, .container-trajetoria__paragrafo p{
-    color: rgb(41, 39, 39);
+.container-texto__paragrafos p, .container-trajetoria__paragrafo, .container-desenvolvimento1__paragrafo p{
+    color: #22223B;
     font-size: 17px;
     margin-bottom: 17px;
     text-align: justify; 
@@ -109,17 +112,19 @@ main{
 
 .container-texto__imagem{
     width: 30%;
+    border-radius: 10px;
+    margin-right: 30px;
 }
 
-.container-trajetoria__titulo{
+.container-trajetoria__titulo, .container-desenvolvimento1__titulo{
     font-size: 25px;
     margin-bottom: 30px;
-    color: #502f4c;
+    color: #22223B;
 }
 
 .card-gostos__titulo{
     font-size: 20px;
-    color: #20171f;
+    color: #22223B;
     margin-bottom: 30px;
 }
 
@@ -130,7 +135,7 @@ main{
 
 .listas{
     width: 30%;
-    background-color: #a866ad;
+    background-color: #9A8C98;
     border-radius: 10px;
     padding: 16px;
     transition: 0.5s;
@@ -142,28 +147,28 @@ main{
 }
 
 .listas h3{
-    color: #ffffff;
+    color: #F2E9E4;
     font-size: 17px;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .lista__item li{
-    color: #ffffff;
+    color: #F2E9E4  ;
     margin-bottom: 10px;
-    list-style: none;
+    margin-left: 15px;
 }
 
 .lista__item li:before{
-    content: "❤";
+    content: "";
     margin-right: 10px;
 }
 
 footer{
     text-align: center;
     padding: 20px;
-    background-color: #a36f9c;
-    color: #ffffff;
+    background-color: #22223B;
+    color: #F2E9E4;
 }
 
 .campo-form {
@@ -174,7 +179,7 @@ footer{
 
 form{
     width: 70%;
-    border: 2px solid #502f4c;
+    border: 2px solid #22223B;
     padding: 20px;
     border-radius: 10px;
 }
@@ -185,7 +190,7 @@ label, input{
 }
 
 fieldset{
-    border: 2px solid #502f4c;
+    border: 2px solid #22223B;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -197,7 +202,7 @@ fieldset{
 
 .form-botao input {
     border: 2px solid #ffffff ;
-    background-color: #502f4c;
+    background-color: #22223B;
     border-radius: 10px;
     color: #ffffff;
     padding: 10px;
@@ -211,6 +216,6 @@ fieldset{
 
 .card-faleconosco h2{
     font-size: 25px;
-    color: #86477e;
+    color: #22223B;
     margin-bottom: 10px;
 }

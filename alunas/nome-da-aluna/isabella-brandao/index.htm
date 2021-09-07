@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Super Alunas {Reprograma}</title>
+</head>
+<body>
+    <header class="cabeçalho">
+        <nav class="menu">
+            <a href="" class="menu__logo">{ }</a>
+            <ul class="menu-navegacao">
+                <li><a href="#super-aluna" class="menu-navegacao__link">Super Aluna</a> </li> 
+                <li> <a href="#trajetoria" class="menu-navegacao__link">Trajetória</a></li>
+                <li> <a href="#fale-conosco" class="menu-navegacao__link">Fale conosco</a></li>
+            </ul>
+        </nav>
+        
+
+        <div class="banner">
+            <h1 class="banner__titulo" >Olá, eu sou a super Aluna {Reprograma}</h1>
+            <p class="banner__subtitulo">Tá passada? Vem conhecer um pouco sobre o meu mundo</p>
+            
+        </div>
+        
+    </header>
+    <main>
+        <section class="card-introducao" id="super-aluna">
+          <h2 class="card-introducao__titulo">Um pouco sobre meu mundinho...</h2>
+          <div class="container-texto">
+              <div class="container-texto__paragrafos">
+                 <p>Me chamo Isabella, escorpiana do dia 31 de outubro de 1999. Como uma boa escorpiana, que quando foca em novos objetivos tende a comandar os trabalhos.</p>
+                 <p>Faço parte da geração Z, e o contexto tecnológico faz parte da evolução natural da minha geração. Sendo assim, como um ser tecnológico que sou, nada mais estimulante e criativo do que trabalhar nessa área.</p>
+                 <p>Aceitei fazer parte da proposta da Reprograma de reduzir o gap de gênero no setor da tecnologia, me propondo a ser desenvolvedora front-end e está sendo cada dia mais incrível!</p>
+              </div>
+              <img src="./img/menina-globo.png" alt="Menina segurando o globo" class="container-texto__imagem">
+          </div>
+
+        </section  >
+         
+        
+        <section class="constainer-trajetoria" id="trajetoria">
+            <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a minha tragetoria nessa vida...</h2>
+            <div class="container-trajetoria__paragrafo">
+                <p>Sou estudante de letra na Universidade Federal de Lavras, mas desde 2019, depois de um Boot Camp de dois dias de sobre html e css decidi que definitivamente a programação era pra mim. </p>
+                <p>Conheci a Reprograma neste Boot Camp e a partir dali comecei a estudar mais sobre tecnologia e hoje procuro me formar em frontend e futuramente ser uma desenvolvedora Full Stack.</p>
+            </div>
+        </section>
+
+        <section class="card-gostos">
+            <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
+            <div class="container-listas">
+                <div class="lista">
+                    <h3>Amo viajar, tenho uma listinha de quais paises quero conhecer</h3>
+                    <ul class="lista__item">
+                        <li>Inglaterra</li>
+                        <li>Peru</li>
+                        <li>Grécia</li>
+                        <li>Estados Unidos</li>
+                        <li>Alemanha</li>
+                    </ul>
+                </div>
+
+                <div class="lista">
+                    <h3>Vamos ouvir música. Veja minhas músicas favoritas</h3>
+                    <ul class="lista__item">
+                        <li>Livre-Jaloo</li>
+                        <li>He can only hold her-Amy Winehouse</li>
+                        <li>Contato com o Mundo Racional-Tim Maia</li>
+                        <li>Vanessa-Grimes</li>
+                        <li>Formation-Beyoncé</li>
+                    </ul>
+                </div>
+
+                <div class="lista">
+                    <h3>Amo ler, e esse são meus livros preferidos</h3>
+                    <ul class="lista__item">
+                        <li>Orgulho e preconceito -Jane Austen</li>
+                        <li>Capitães da areia -Jorge Amado</li>
+                        <li>Os miseráveis -Victor Hugo</li>
+                        <li>O retrato de Dorian Gray -Oscar Wild</li>
+                        <li>Os sofrimetos do jovem Werther -Goethe</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+           
+
+        <section class="card-fale-conosco" id="fale-conosco">
+            <h2>Fale conosco</h2>
+            
+            <form>
+                <div class="campo-form" >
+                    <label for="nome">Nome completo</label>
+                    <input id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
+    
+                    <label for="idade">Qual sua idade</label>
+                    <input id="idade" type="text" name="" placeholder="Digite seu nome" required>
+    
+                    <label for="email">Digite o seu email</label>
+                    <input id="email" type="email" name="email" placeholder="seuemail@dominio.com" required>
+    
+                    <label for="telefone">Digite o seu telefone</label>
+                    <input id="telefone" type="tel" name="telefone" placeholder="(xx) XXXXX-XXXX" required>
+    
+                    <label for="">Digite a sua mensagem</label>
+                    <textarea id="mensagem" name ="mensagem" placeholder="Digite uma mensagem"></textarea>
+                    
+                    <label >Qual a sua comida favorita?</label>
+                    <select name="comidas que eu gosto" id="comidas">
+                        <option value="coxinha"> coxinha</option>
+                        <option value="hamburguer">hambúrguer</option>
+                        <option value="pizza">pizza</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <div>
+                        <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                        <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                        <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+
+                    </div>
+                   
+                </fieldset>
+                <div>
+                    <input type="checkbox" checked> <label >Concorda que você é maravilhosa?</label>
+                </div>
+               
+               <div class="form-botao">
+                   <input type="submit" value="Enviar formulario">
+               </div>
+            </form>
+
+        </section>
+
+        <section>
+
+        </section>
+       
+
+    </main>
+    <footer>
+        <p>]Site desenvolvido por Isabella Carolina- CopyRight</p>
+    </footer>
+
+
+
+</body>
+</html>

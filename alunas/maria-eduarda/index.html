@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Aqui vai ser incluída informações não visíveis ao usuário -->
+        <meta charset="UTF-8">
+        <title>Super Aluna {Reprograma}</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,200;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+        <header class="cabecalho">
+
+            <nav class="menu">
+                <a href="" class="menu__logo">{ }</a>
+                <ul class="menu-navegacao">
+                    <li><a href="#Super_aluna" class="menu-navegacao__link">Super Aluna</a></li>
+                    <li><a href="#Gostos" class="menu-navegacao__link">O que mais gosto</a></li>
+                    <li><a href="#Fale_conosco" class="menu-navegacao__link">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        
+            <div class="banner" >
+                <h1 class="banner__titulo" ></h1>
+                <p class="banner__subtitulo" ></p> 
+            </div>
+
+        </header>
+        <main>
+            <section class="card-introducao" id="Super_aluna">
+                <h2 class="card-introducao__titulo">Super aluna:</h2>
+                <div class="container-texto">
+                    <div class="container-texto__paragrafos">
+                        <p>  Olá!</p>
+                        <p> Me chamo Maria Eduarda Souza da Silva, tenho 25 anos e sou Pernambucana de Jaboatão dos Guararapes. Gosto de pedalar, correr, cuidar das minhas plantinhas e brincar com meu cachorro Logan Henrique (esse lindão das fotos aqui do lado!)</p>
+                        <p>Decidi recentemente migrar para a área de tecnologia visando explorar meu potencial e enfrentar novos desafios; Tendo tido como primeiro contato com a área através do Cresça com o Google, fui direcionada para o curso EuProgrAmo, da Progra{m}aria, no qual fui bolsista e tive a oportunidade de aprender conceitos básicos de HTML, CSS E JavaScript.
+                        </p>
+                        <p>De forma independente, estudei conceitos de lógica de programação e algoritmos, e explorei o uso de ferramentas de versionamento (Git e Github); Atualmente estou aprofundando e reforçando o estudo desses conteúdos no curso de front-end da Reprograma.</p>
+                        <p>Ingressei no curso de Engenharia de Software na Faculdade UNINTER e estou no primeiro período, no qual venho desenvolvendo pequenos projetos em Python. Esse site é resultado do aprendido na terceira semana do curso da Reprograma, que aborda os assuntos HTML e CSS. Seja bem vindo, e espero que goste!</p>
+                    </div>
+                    <img src="./img/loganhenrique.png" alt="Menina segurando o globo" class="container-texto__imagem">
+                </div>
+            </section>
+            
+            <section class="card-gostos" id="Gostos">
+                <h2 class="card-gostos__titulo">Conheça um pouco mais sobre o que gosto:</h2>
+                <div class="container-listas">
+                    <div class="lista">
+                        <h3>Amo viajar, e tenho uma listinha de quais países quero conhecer:</h3>
+                        <ul class="lista__item">
+                            <li>França</li>
+                            <li>Itália</li>
+                            <li>África do Sul</li>
+                            <li>Japão</li>
+                            <li>Inglaterra</li>
+                        </ul>
+                    </div>
+                    <div class="lista">
+                        <h3>Essas são minhas músicas favoritas:</h3>
+                        <ul class="lista__item">
+                            <li>Comigo ninguém pode - Mc Tha</li>
+                            <li>Infinito particular - Silva</li>
+                            <li>Vou pra cima - Francisco, el hombre e Sidney Magal</li>
+                            <li>Hard Times - Paramore</li>
+                            <li>Death bed - Powfu</li>
+                        </ul>
+
+                    </div>
+                    <div class="lista">
+                        <h3>Esses são meus livros preferidos:</h3>
+                        <ul class="lista__item">
+                            <li>O salmão da dúvida - Douglas Adams.</li>
+                            <li>O guia do mochileiro das galáxias - Douglas Adams.</li>
+                            <li>Fahrenheit 451 - Ray Bradbury.</li>
+                            <li>A torre negra - Stephen King.</li>
+                            <li>Americanah -  Chimamanda Ngozi Adichie.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </section>
+            <section class="card-fale-conosco" id="Fale_conosco">
+                <h2>Fale conosco</h2>
+                <form>
+                    <div class="campo-form">
+                        <label for="nome">Nome completo:</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+                        
+                        <label for="idade">Qual a sua idade?:</label>
+                        <input id="idade" type="number" name="idade" min="0" max="120" value="0" required>
+                        
+                        <label for="email">Digite o seu email:</label>
+                        <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
+
+                        <label for="telefone">Digite o seu telefone:</label>
+                        <input  id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+                        <label for="mensagem">Digite a dia mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+                        <label for="comidas">Qual a sua comida favorita?</label>
+                        <select name="comidas-que-eu-gosto" id="comidas">
+                            <option value="coxinha">Coxinha</option>
+                            <option value="hamburguer">Hambúrguer</option>
+                            <option value="pizza">Pizza</option>
+                        </select>
+                    </div>
+                    <fieldset>
+                        <legend>Como podemos entrar em contato com você?</legend>
+                        <div>
+                            <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                            <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                            <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                        </div>     
+                    </fieldset>
+                    <div>
+                        <input type="checkbox" checked><label>Concorda que você é maravilhosa?</label>
+                    </div>
+                    <div class="form-botao">
+                        <input type="submit" value="Enviar formulário">
+                    </div>
+                </form>
+
+            </section>
+            
+           <!--
+               <section>
+                <h2>Explicando os display</h2>
+
+                <h3>Display inline</h3>
+
+                <div class="display-inline">
+                    <div>caixa 1</div>
+                    <div>caixa 2</div>
+                    <div>caixa 3</div>
+                </div>
+
+                <h4>Display block</h4>
+                <div class="display-block">
+                    <div>caixa 1</div>
+                    <div>caixa 2</div>
+                    <div>caixa 3</div>
+                </div>
+
+                <h4>Display inline-block</h4>
+                <div class="display-inline-block">
+                    <div>caixa 1</div>
+                    <div>caixa 2</div>
+                    <div>caixa 3</div>
+                </div>
+                </section>
+           -->     
+           
+
+        </main>
+        <footer>
+            <p>Site desenvolvido por Maria Eduarda Souza da Silva | © Copyright 2021</p>
+        </footer>
+        
+    </body>
+</html>

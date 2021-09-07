@@ -69,6 +69,9 @@ Online-13 | Front-end | 2021 | Fundamentos de HTML e CSS
 
 [link para o arquivo dontpad](http://dontpad.com/On13-html-css);
 
+## Link da página contendo todos os sites desenvolvidos pelas alunas
+[https://reprograma.github.io/On13-TodasEmTech-HTML-CSS/](Clique aqui para ver os sites desenvolvidos pelas alunas)
+
 ### **Instruções para baixar o repositório**
 
 

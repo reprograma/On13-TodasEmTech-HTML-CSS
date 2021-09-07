@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Aqui vai ser incluída informações não visíveis ao usuário -->
+        <meta charset="UTF-8">
+        <title>Super Aluna {Reprograma}</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,200;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+        <header class="cabecalho">
+
+            <nav class="menu">
+                <a href="" class="menu__logo">{ }</a>
+                <ul class="menu-navegacao">
+                    <li><a href="#" class="menu-navegacao__link">Super Aluna</a></li>
+                    <li><a href="#" class="menu-navegacao__link">Trajetória</a></li>
+                    <li><a href="#" class="menu-navegacao__link">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        
+            <div class="banner" >
+                <h1 class="banner__titulo" >Olá, eu sou a super Aluna Fabíula Rodrigues {Reprograma}</h1>
+                <p class="banner__subtitulo" >Tá passada?Vem conhecer um pouco sobre o meu mundo</p> 
+            </div>
+
+        </header>
+        <main>
+            <section class="card-introducao">
+                <h2 class="card-introducao__titulo">Um pouco sobre o meu mundinho...</h2>
+                <div class="container-texto">
+                    <div class="container-texto__paragrafos">
+                        <p>Olá, sou mulher sou filha sou uma mãe rara do vini e da bia e juntos vivemos o autismo. </p>
+                        <p>Meu filhos me mostram que podemos amar uns aos outros, cada um da sua maneira e do seu jeito de ser.</p>
+                        <p>Sou imensamente feliz e realizadora dos meus sonhos e objetivos.</p>
+                    </div>
+                    <img src="./img/menina-globo.png" alt="Menina segurando o globo" class="container-texto__imagem">
+                </div>
+            </section>
+            <section class="container-trajetoria">
+                <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a minha trajetória nessa vida...</h2>
+                <div class="container-trajetoria__paragrafo">
+                    <p>Vim do sertão para capital e aos 16 anos fiz um curso de informática e passei a da aulas em uma ong,acabei mundando para área comercial onde passei uma grande parte da minha vida.</p>
+                    <p>Decide voltar para área de tecnologia, estou em trasição de carreira e atualmente sou estudante de desenvolvimento, estou amando esse mundo de tecnologia,pois acredito que lugar de mulher é aonde ela quiser e o meu é na tecnologia.</p>
+    
+                </div>
+
+            </section>
+            <section class="card-gostos">
+                <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
+                <div class="container-listas">
+                    <div class="lista">
+                        <h3>Amo viajar, e tenho uma listinha de quais lugares quero conhecer:</h3>
+                        <ul class="lista__item">
+                            <li>Salvador</li>
+                            <li>Maragogi</li>
+                            <li>Natal</li>
+                            <li>Maceió</li>
+                            <li>Gramado</li>
+                        </ul>
+                    </div>
+                    <div class="lista">
+                        <h3>Amo ouvir música. Confira as minhas musicas favoritas:</h3>
+                        <ul class="lista__item">
+                            <li>Maria,maria</li>
+                            <li>Todo Azul do Mar</li>
+                            <li>Tic Nervoso</li>
+                            <li>Daquele Jeito</li>
+                            <li>Diferenciada</li>
+                        </ul>
+
+                    </div>
+                    <div class="lista">
+                        <h3>Amo fazer outras coisas, e esses são os meus hobbies preferidos:</h3>
+                        <ul class="lista__item">
+                            <li>DJ em festas e eventos</li>
+                            <li>Decorar e reformar a casa</li>
+                            <li>Cozinhar</li>
+                            <li>Andar de patins</li>
+                            <li>Fazer caminhadas</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </section>
+            <section class="card-fale-conosco" id="fale-conosco">
+                <h2>Fale conosco</h2>
+                <form>
+                    <div class="campo-form">
+                        <label for="nome">Nome completo:</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+                        
+                        <label for="idade">Qual a sua idade?:</label>
+                        <input id="idade" type="number" name="idade" min="0" max="120" value="0" required>
+                        
+                        <label for="email">Digite o seu email:</label>
+                        <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
+
+                        <label for="telefone">Digite o seu telefone:</label>
+                        <input id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+                        <label for="mensagem">Digite a dia mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+                        <label for="comidas">Qual a sua comida favorita?</label>
+                        <select name="comidas-que-eu-gosto" id="comidas">
+                            <option value="lasanha">Coxinha</option>
+                            <option value="sorvete">Hambúrguer</option>
+                            <option value="pizza">Pizza</option>
+                        </select>
+                    </div>
+                    <fieldset>
+                        <legend>Como podemos entrar em contato com você?</legend>
+                        <div>
+                            <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                            <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                            <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                        </div>     
+                    </fieldset>
+                    <div>
+                        <input type="checkbox" checked><label>Concorda que você é maravilhosa?</label>
+                    </div>
+                    <div class="form-botao">
+                        <input type="submit" value="Enviar formulário">
+                    </div>
+                </form>
+
+            </section>
+            <section>
+                <h2
+            <p>Site desenvolvido por Fabíula Rodrigues - Aluna {Reprograma} | © Copyright 2021</p>
+        </footer>
+        
+    </body>
+</html>

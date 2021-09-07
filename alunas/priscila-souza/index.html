@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Super Aluna {Reprograma}</title>
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <nav class="menu">
+        <a href="" class="menu__logo">{ }</a>
+        <ul class="menu-navegacao">
+          <li>
+            <a href="#super-aluna" class="menu-navegacao__link">Super Aluna</a>
+          </li>
+          <li>
+            <a href="#trajetoria" class="menu-navegacao__link">Trajetória</a>
+          </li>
+          <li>
+            <a href="#fale-conosco" class="menu-navegacao__link"
+              >Fale Conosco</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="banner">
+        <h1 class="banner__titulo">Olá, eu sou a super Aluna {Reprograma}</h1>
+        <p class="banner__subtitulo">Esse site desenvolvemos na nossa aula.</p>
+        <a href="./Projeto  HTML CSS/index.html" class="menu-navegacao__projeto"
+          >Aqui você pode vizualizar meu Projeto pós aula HTML|CSS</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="card-introducao" id="super-aluna">
+        <h2 class="card-introducao__titulo">Um pouco sobre meu mundinho...</h2>
+        <div class="container-texto">
+          <div class="container-texto__paragrafos">
+            <p>
+              Olá, bem vinda ao meu mundo. Me chamo Priscila Karina, e vou te
+              contar um pouco sobre Minha trajetória até aqui e o que mais amo
+              nessa vida.
+            </p>
+            <p>
+              Tenho 32 anos, moro em Jaboatão dos guararapes - PE. Já fiz um
+              pouco de tudo nessa vida. Trabalhei com vendas, recepção
+              hospitalar, caixa de farmácia, produção de uma grande empresa de
+              alimentos, já tive uma empresa, fiz StringArt que são quadros
+              feitos em madeira com pregos e linhas... mas, atualmente estudo
+              programação.
+            </p>
+            <p>
+              Tenho feito alguns cursos gratuitos e estudado sozinha. Espero em
+              breve estar inserida no mercado de trabalho atuando na área.
+              Particularmente eu amo as artes, desenho, música, dança,
+              artesanato. Faço um pouco de tudo: rabisco um desenho e outro,
+              toco bateria, amo ouvir música, danço (amo dançar, me sinto livre)
+              e pra completar faço quadros com a arte de StringArt.
+            </p>
+          </div>
+          <img
+            src="./img/menina-globo.png"
+            alt="Menina segurando um globo"
+            class="container-texto__imagem"
+          />
+        </div>
+      </section>
+
+      <section class="container-trajetoria" id="trajetoria">
+        <h2 class="container-trajetoria__titulo">
+          Deixa eu te contar um pouco sobre a minha tragetória nessa vida...
+        </h2>
+        <div class="container-trajetoria__paragrafo">
+          <p>
+            ✨ Canceriana dramática sim 😭 - não nego! Pernambucana, natural de
+            Moreno. Apaixonada pelo Sport Clube do Recife 🏆.
+            <br />Eu amo futebol, não sei explicar só sentir! Estudante de
+            Desenvolvimento Front-End. Sonhadora, corajosa, amável, sempre com
+            um sorriso no rosto. Muita história pra contar, alguns lugares na
+            memória, uns bons amigos pelo caminho e ainda muita coisa pra viver!
+          </p>
+        </div>
+      </section>
+
+      <section class="card-gostos">
+        <h2 class="card-gostos__titulo">
+          Veja o que eu mais gosto nessa vida...
+        </h2>
+        <div class="container-listas">
+          <div class="lista">
+            <h3>
+              Amo viajar, e tenho uma listinha de quais países quero conhecer:
+            </h3>
+            <ul class="lista__item">
+              <li>Portugal</li>
+              <li>África</li>
+              <li>Chile</li>
+              <li>Itália</li>
+              <li>México</li>
+            </ul>
+          </div>
+
+          <div class="lista">
+            <h3>Amo ouvir música. Confira minhas músicas favoritas:</h3>
+            <ul class="lista__item">
+              <li>Pauperrecido</li>
+              <li>A ordem natural das coisas</li>
+              <li>Principia</li>
+              <li>Andança</li>
+              <li>Braile</li>
+            </ul>
+          </div>
+
+          <div class="lista">
+            <h3>Amo assistir Séries. Confira minhas séries favoritas:</h3>
+            <ul class="lista__item">
+              <li>For life</li>
+              <li>La casa de papel</li>
+              <li>Sex Education</li>
+              <li>Dark</li>
+              <li>The L World</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="fale-conosco" id="fale-conosco">
+        <h2>Fale Conosco</h2>
+        <form>
+          <div class="campo-form">
+            <label for="nome">Nome Completo:</label>
+            <input
+              id="nome"
+              type="text"
+              placeholder="Digite o seu Nome Completo"
+              required
+            />
+
+            <label for="idade">Qual a sua idade?</label>
+            <input
+              id="idade"
+              type="number"
+              name="idade"
+              min="0"
+              max="120"
+              value="0"
+              required
+            />
+
+            <label for="email">Digite o seu Email:</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="seuemail@dominio.com"
+              required
+            />
+
+            <label for="telefone">Seu Telefone:</label>
+            <input
+              id="telefone"
+              type="tel"
+              name="telefone"
+              placeholder="(xx) x xxxx-xxxx"
+              required
+            />
+
+            <label for="mensagem">Deixe uma Mensagem:</label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              placeholder="Digite sua Mensagem"
+            ></textarea>
+
+            <label for="comidas">Qual a sua comida Favorita?</label>
+            <select name="comidas-que-eu-gosto" id="comidas">
+              <option value="coxinha">Coxinha</option>
+              <option value="pastel">Pastel</option>
+              <option value="hamburguer">Hambúrguer</option>
+              <option value="pizza">Pizza</option>
+            </select>
+          </div>
+
+          <fieldset>
+            <legend>Como podemos entrar em contato com você?</legend>
+            <input
+              type="radio"
+              value="whatsapp"
+              name="contato"
+              id="whatsapp"
+            /><label for="whatsapp">Whatsapp</label>
+            <input
+              type="radio"
+              value="linkedin"
+              name="contato"
+              id="linkedin"
+            /><label for="linkedin">LinkedIn</label>
+            <input
+              type="radio"
+              value="email1"
+              name="contato"
+              id="email1"
+            /><label for="email1">Email</label>
+          </fieldset>
+
+          <div>
+            <input type="checkbox" checked /><label
+              >Concorda que você é Maravilhosa?!</label
+            >
+          </div>
+
+          <div class="form-botao">
+            <input type="submit" value="Enviar Formulário" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Site desenvolvido por Priscila Souza - Aula {Reprograma} | ©️ Copyright
+        2021
+      </p>
+    </footer>
+  </body>
+</html>

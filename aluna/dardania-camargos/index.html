@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=deevice-width, initial-scale=1.0">
+        <title>Livros</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" href="./img/icone-navegacao.png">
+    </head>
+
+    <body>
+        <!-- Aqui serão incluídas informações visíveis ao usuário -->
+        <header class="cabecalho">
+
+            <nav class="menu">
+                <img src="./img/book (2).png" class="logo">
+
+                <ul class="menu-navegacao">
+                    <li><a href="#sobre-mim" class="menu-navegacao__link"> Sobre mim </a></li>
+                    <li><a href="#recomendacoes" class="menu-navegacao__link"> Recomendações </a></li>
+                    <li><a href="#contato" class="menu-navegacao__link"> Contato </a></li>
+                </ul>
+
+                <img src="./img/menu.png" class="menu-icon">
+            </nav>
+
+            <div class="card-introducao" id="sobre-mim" >
+                <div class="colunas">
+                    <h1>Dardânia Camargos</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laborum repudiandae exercitationem
+                        quidem placeat quia, autem iusto repellendus possimus voluptatibus veniam ullam a optio, aperiam
+                        excepturi aut eius nulla dolor.</p>
+                    <button type="button" id="recomendacoes">Explore</button>
+                </div>
+
+                <div class="colunas">
+                    <div class="card ">
+                        <h5>Autores</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, non! Nisi, fugit molestias. Est
+                            recusandae quia voluptate! Rerum iusto ex fuga suscipit voluptatum, deserunt dignissimos odio
+                            eius eum eligendi doloribus.</p>
+                    </div>
+                    <div class="card">
+
+                        <h5>Gêneros Literários</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, non! Nisi, fugit molestias. Est
+                            recusandae quia voluptate! Rerum iusto ex fuga suscipit voluptatum, deserunt dignissimos odio
+                            eius eum eligendi doloribus.</p>
+                    </div>
+                    <div class="card">
+                        <h5>Biblioteca</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, non! Nisi, fugit molestias. Est
+                            recusandae quia voluptate! Rerum iusto ex fuga suscipit voluptatum, deserunt dignissimos odio
+                            eius eum eligendi doloribus.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h5>Livros</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, non! Nisi, fugit molestias. Est
+                            recusandae quia voluptate! Rerum iusto ex fuga suscipit voluptatum, deserunt dignissimos odio
+                            eius eum eligendi doloribus.</p>
+                    </div>
+                </div>
+        </header>
+        <main>
+            <section class="card-fale-conosco" id="contato">
+                <h2>Contato</h2>
+                <form>
+                    <div class="campo-form">
+                        <label for="nome"> Nome:</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo." required>
+
+                        <label for="email">E-mail:</label>
+                        <input id="email" type="email" name="email" placeholder="seuemail@dominio.com" required>
+
+                        <label for="tel">Telefone:</label>
+                        <input id="tel" type="tel" name="telefone" placeholder="(xx) x xxxx-xxxx" required>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+                        
+                        <label for="genero-literario">Qual o seu gênero literário favorito?</label>
+                        <select name="genero_literario_que_eu_gosto" id="genero-literario">
+                            <option value="romance">Romance</option>
+                            <option value="Fábula">Fábula</option>
+                            <option value="conto">Conto</option>
+                            <option value="novela">Novela</option>
+                            <option value="cronica">Crônica</option>
+                            <option value="Ensaio">Ensaio</option>
+                            <option value="Poesia">Poesia</option>
+                            <option value="Fábula">Fábula</option>
+                        </select>
+
+                    </div>
+
+                    <fieldset>
+                        <legend>Como podemos entrar em contato com você?</legend>
+                        <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                        <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                        <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                    </fieldset>
+
+                    <div>
+                        <input type="checkbox" checked><label for="">Gostaria de receber recomendações de livros?</label>
+                    </div>
+
+                    <div class="form-botao">
+                        <input type="submit" value="Enviar">
+                    </div>
+
+                </form>
+
+            </section>    
+        </main>
+
+        <footer>
+            <p>Site desenvolvido por Dardânia Camargos - Aula {Reprograma} | © Copyright 2021 </p>
+        </footer>
+
+    </body>
+</html>

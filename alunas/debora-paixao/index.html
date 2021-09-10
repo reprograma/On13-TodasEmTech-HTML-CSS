@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Aqui vai ser incluída informações não visíveis ao usuário -->
+        <meta charset="UTF-8">
+        <title>Super Aluna {Reprograma}</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preco    nnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,200;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Aqui vai ser incluída informações visíveis ao usuário -->
+        <header class="cabecalho">
+
+            <nav class="menu">
+                <a href="" class="menu__logo">{ }</a>
+                <ul class="menu-navegacao">
+                    <li><a href="https://www.instagram.com/pedagogadeborapaixao/" target="_blank" class="menu-navegacao__link">Super Paixão</a></li>
+                    <li><a href="https://www.instagram.com/frutodefavela/" target="_blank" class="menu-navegacao__link">Propósito</a></li>
+                    <li><a href="#" class="menu-navegacao__link">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        
+            <div class="banner" >
+                <h1 class="banner__titulo" > Oie, eu sou a super Aluna Debi Paixão da {Reprograma}</h1>
+                <p class="banner__subtitulo" >Gostasse? Vem conhecer um pouco sobre o meu mundo :)</p> 
+            </div>
+
+        </header>
+        <main>
+            <section class="card-introducao">
+                <h2 class="card-introducao__titulo">Um pouco sobre o meu world...</h2>
+                <div class="container-texto">
+                    <div class="container-texto__paragrafos">
+                        <p>Ariana com ascendente em Sagitário e Lua em Peixes, sou muito sonhadora e desde pequena desbravadora da minha trajetória. Sou filha de mãe solteira e tenho três irmãos. Pedagoga de formação, educadora social e sorridente por natureza.</p>
+                        <p>Apaixonada por música, sou fã de Luan Santana desde os meus 12 anos de idade, mas também curto o ritmo brega funk, pop, rock, cumbia, gospel e afins... é, eu sou muito eclética e gosto mesmo de curtir a mensagem que a música traz e me movimentar!</p>
+                        <p>Em 2021, fiz 23 anos e decidi ser programadora front-end, mas foi há mais de dez anos atrás que tive o primeiro contato com a tecnologia digital. </p>
+                    </div>
+                    <img src="./img/menina-globo.png" alt="Menina segurando o globo" class="container-texto__imagem">
+                </div>
+            </section>
+            <section class="container-trajetoria">
+                <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre o meu propósito nessa vida...</h2>
+                <div class="container-trajetoria__paragrafo">
+                    <p>Sou moradora da favela do Jacaré, localizada em Paulista, onde desenvolvo atividades voluntárias para a minha comunidade.</p>
+                    <p>Sempre corri muito atrás para que as oportunidades chegassem até a mim e abracei todas elas. Hoje quero que elas cheguem nas favelas!</p>
+    
+                </div>
+
+            </section>
+            <section class="card-gostos">
+                <h2 class="card-gostos__titulo">Veja o que eu mais gosto nessa vida...</h2>
+                <div class="container-listas">
+                    <div class="lista">
+                        <h3>Amo cozinhar, os meus pratos preferidos são:</h3>
+                        <ul class="lista_item">
+                            <li>Strogonoff de frango</li>
+                            <li>Fricassê de frango</li>
+                            <li>Lasanha</li>
+                            <li>Bolo de cenoura</li>
+                            <li>Mousse</li>
+                        </ul>
+                    </div>
+                    <div class="lista">
+                        <h3>Amo ouvir música. Confira as minhas musicas favoritas:</h3>
+                        <ul class="lista_item">
+                            <li>A Tua Voz - Gloria Groove</li>
+                            <li>Zero - Liniker</li>
+                            <li>Sinais - Luan Santana</li>   
+                            <li>Eu Cuidarei - Banda Torpedo</li>
+                            <li>Árvore Cortada - Valesca Mayssa</li>
+                        </ul>
+
+                    </div>
+                    <div class="lista">
+                        <h3>Amo viajar, meus lugares preferidos são:</h3>
+                        <ul class="lista_item">
+                            <li>Alto da Sé- Olinda</li>
+                            <li>Porto de Galinhas - Ipojuca</li>
+                            <li>Praia de Calhetas - Cabo</li>
+                            <li>Bonito - PE</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </section>
+            <section class="card-fale-conosco" id="fale-conosco">
+                <h2>Fale conosco</h2>
+                <form>
+                    <div class="campo-form">
+                        <label for="nome">Nome completo:</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite o seu nome completo" required>
+                        
+                        <label for="idade">Qual a sua idade?:</label>
+                        <input id="idade" type="number" name="idade" min="0" max="120" value="0" required>
+                        
+                        <label for="email">Digite o seu email:</label>
+                        <input id="email" type="email" name="email" placeholder="seuemail@dominio.com">
+
+                        <label for="telefone">Digite o seu telefone:</label>
+                        <input  id="telefone" type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+
+                        <label for="mensagem">Digite a dia mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+                        <label for="gosto">O que você gostou daqui?</label>
+                        <select name="gostos-do-usuario" id="gosto">
+                            <option value="SuperPaixão">Super Paixão</option>
+                            <option value="Propósito">Propósito</option>
+                            <option value="História">História</option>
+                        </select>
+                    </div>
+                    <fieldset>
+                        <legend>Como podemos entrar em contato com você?</legend>
+                        <div>
+                            <input type="radio" checked value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                            <input type="radio" value="linkedin" name="contato" id="linkedin"><label for="linkedin">Linkedin</label>
+                            <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                        </div>     
+                    </fieldset>
+                    <div>
+                        <input type="checkbox" checked><label>Concorda que você é maravilhosa?</label>
+                    </div>
+                    <div class="form-botao">
+                        <input type="submit" value="Enviar formulário">
+                    </div>
+                </form>
+
+            </section>
+        </main>
+        <footer> 
+            <p><strong> Site desenvolvido por Débora Paixão na aula da turma 13º de Front-end da {Reprograma} | Copyright © 2021 </strong></p>
+        </footer>
+
+    </body>
+</html>

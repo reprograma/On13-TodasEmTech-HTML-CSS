@@ -1,0 +1,155 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+}
+
+.cabecalho{
+    width: 100%;
+    left: 80%;
+    height: 90vh;
+    background-image: url(./../img/banner.jpg);
+    background-size: cover;
+}
+
+.menu{
+    max-width: 90px;
+    width: 100%;
+    height: 200%;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed
+}
+
+.banner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__logo{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.menu-navegacao{
+    display: block;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu-navegacao__link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    align-items: center;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 25px;
+    transition: 0.5s all;
+}
+
+.menu-navegacao__link:hover{
+    background-color: rgb(92, 91, 91);
+}
+
+.menu-redes{
+    color: #ffffff;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+}
+
+.menu-redes__link{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    align-items: center;
+}
+
+.menu-redes__imagem{
+    width: 40px;
+    padding: 10px;
+    display: block;
+   justify-content: space-between;
+   margin-top: 60px;
+}
+
+.banner__titulo{
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.banner__subtitulo{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+main{
+    width: 100%;
+    padding-left: 10%;
+    background-color: rgb(255, 255, 255);
+}
+
+.card-introducao, .container-trajetoria{
+    padding: 4%;
+}
+
+.card-introducao__titulo{
+    color: rgb(65, 63, 63);
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.container-texto{
+   display: flex;
+   align-items: flex-start;
+}
+
+.container-texto__paragrafo{
+   width: 60%;
+   margin-right: 10%;
+}
+
+.container-texto__paragrafo p{
+    color: black;
+    font-size: 17px;
+    margin-bottom: 17px;
+    text-align: justify;
+}
+
+.container-texto__imagem{
+    width: 30%;
+}
+
+.container-trajetoria__titulo{
+    color: rgb(65, 63, 63);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.container-trajetoria__paragrafo p{
+    color: black;
+    font-size: 17px;
+    margin-bottom: 17px;
+    text-align: justify;
+    margin-right: 40%;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: #ffffff;
+}

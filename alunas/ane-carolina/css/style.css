@@ -122,6 +122,7 @@ main{
 .container-listas{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .lista{
@@ -179,8 +180,6 @@ form{
     padding: 30px;
     border-radius: 10px;
     
-
-
 }
 
 label, input{
@@ -217,4 +216,86 @@ fieldset{
     font-size: 25px;
     color: darkmagenta;
     margin-bottom: 20px;
+}
+
+
+@media (min-width:768px){
+
+    .cabecalho{
+        width: 100%;
+        max-width: 100%;
+        max-height: 50vw;
+        background: linear-gradient(rgba(116,44,126,0.5), rgba(167,92,204,0.7)), url(/alunas/ane-carolina/img/banner-bg.png) no-repeat;
+        background-size: cover;
+    }
+
+    .container-listas{
+        /* display: flex;
+        margin: 60px;
+        justify-content: space-around;*/
+
+        
+        display: grid;
+        /* aqui eu determino é são 3 colunas de tamanhos iguas, cada coluna tem uma fração */
+        grid-template-columns:  1fr;
+        /* esssa é a altura das linhas, se vc quiser pode apaga-la caso não queira uma altura definida
+        grid-auto-rows: 100px;
+        /* espaço entre um elemento interno e outro */
+        grid-gap: 20px;
+        /* margem interna que afasta os elementos da borda do grid */
+        padding: 20px;
+        margin-left: 70px;
+        
+        
+    }
+
+    .lista{
+        width:90%;
+    
+    }
+
+    .container-texto__imagem{
+        width: 30%;
+    }
+
+    .container-texto__paragrafos p, a, .container-trajetoria__paragrafo p{
+        flex-direction: row;
+        font-size: 25px;
+    }
+
+    .lista h3{
+        font-size: 30px;
+    }
+
+    .lista__item li{
+        font-size: 25px;
+    }
+
+    .card-gostos__titulo{
+
+        font-size: 40px;
+        margin-left: 90px;
+    }
+    
+
+    .campo-form label{
+        font-size: 25px;
+    }
+
+}
+
+@media (min-width:1024px){
+        .container-texto{
+            flex-direction: row;
+        }
+
+
+        .lista{
+            max-width: 30%;
+        }
+
+        .container-listas{
+            display: flex;
+            margin: 60px;
+            justify-content: space-around;}
 }

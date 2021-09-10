@@ -12,7 +12,25 @@
     height: 80vh;
     background: linear-gradient(rgba(116,44,126,0.5), rgba(167,92,204,0.7)), url(./../img/background.jpg) no-repeat;
     background-size: cover;
+
 }
+@media (max-width: 600px) { 
+    .cabecalho{
+        width: 100%;
+        height: 60vh;
+
+    
+    }
+  }
+
+@media (max-width: 400px) { 
+    .cabecalho{
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+
+    }
+  }
 
 .menu{
     width: 100%;
@@ -42,6 +60,7 @@
 .menu-navegacao{
     display: flex;
     list-style: none;
+
 }
 
 .menu-navegacao__link{
@@ -51,6 +70,20 @@
     padding: 10px;
     transition: 0.5s all;
     border-radius: 10px;
+}
+@media (max-width: 400px) { 
+
+    .menu-navegacao__link{
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 0.8em;
+        padding: 10px;
+        transition: 0.5s all;
+        border-radius: 10px;
+    }
+
+
+
 }
 
 .menu-navegacao__link:hover{
@@ -62,11 +95,35 @@
     font-size: 30px;
     margin-bottom: 15px;
 }
-
 .banner__subtitulo{
     color: #ffffff;
     font-size: 20px;
 }
+@media (max-width: 600px) { 
+    .banner__titulo{
+        color: #ffffff;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .banner__subtitulo{
+        color: #ffffff;
+        font-size: 0.667em;
+    }
+  }
+
+  @media (max-width: 400px) { 
+    .banner__titulo{
+        color: #ffffff;
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+    .banner__subtitulo{
+        color: #ffffff;
+        font-size: 0.8em;
+    }
+  }
+
+
 
 main{
     width: 90%;
@@ -123,6 +180,18 @@ main{
     display: flex;
     justify-content: space-between; 
 }
+@media (max-width: 400px) { 
+
+    .container-listas{
+        display: grid;
+        justify-items: center;
+        grid-template-rows: 1fr 1fr;
+        gap: 15px;
+    }
+
+
+}
+
 
 .lista{
     width: 30%;
@@ -132,7 +201,22 @@ main{
     transition: 0.5s all;
     box-shadow: 5px 5px 9px #cccccc;
 }
+@media (max-width: 400px) { 
 
+    .lista {
+        width: 55%;
+        background-color: #A866AD;
+        border-radius: 10px;
+        padding: 10px;
+        transition: 0.5s all;
+        box-shadow: 5px 5px 9px #cccccc;
+
+
+
+    }
+
+
+}
 .lista:hover{
     transform: scale(1.1);
     

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Super Aluna {Reprograma}</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,200;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <nav class="menu">
+                <a href="" class="menu__logo">{ }</a>
+                <ul class="menu-navegacao">
+                    <li><a href="#super-aluna" class="menu-navegacao__link">Super Aluna</a></li>
+                    <li><a href="#trajetoria" class="menu-navegacao__link">Trajetória</a></li>
+                    <li><a href="#fale-conosco" class="menu-navegacao__link">Fale conosco</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="banner">
+                <div>
+                    <h1 class="banner__titulo"> Olá, eu sou a Super Aluna {REPROGRAMA}</h1>
+                    <p class="banner__subtitulo">Tá passada? Vem conhecer um pouco sobre o meu mundo</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="card-introducao" id="super-aluna">
+                <h2 class="card-introducao__titulo">Um pouco sobre o meu mundinho...</h2>
+                <div class="container-texto">
+                    <div class="container-texto__para_paragrafos">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae, blanditiis quas debitis ad aliquid magni facere neque nesciunt cum! Assumenda accusantium molestias facilis recusandae numquam rerum autem vero ad?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, perferendis ducimus assumenda aliquam quisquam amet magni, quibusdam sed consectetur reiciendis quaerat fugit aperiam porro veritatis unde! Veniam numquam non porro.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam distinctio ducimus, est necessitatibus nobis ullam adipisci voluptas laudantium eum deleniti ipsam natus animi minima ipsa atque id! Deserunt, repudiandae dolorem.</p>
+                    </div>
+                    <img src="./img/menina-globo.png" alt="Menina segurando o globo" class="container-texto__imagem">
+                </div>
+            </section>
+            <section class="container-trajetoria" id="trajetoria">
+                <h2 class="container-trajetoria__titulo">Deixa eu te contar um pouco sobre a minha trajetória nessa vida</h2>
+                <div class="container-trajetoria__paragrafo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi numquam animi magni id sapiente dolore expedita. Alias quo sed eaque reprehenderit tempore, quae quas cumque. Molestias fugit quaerat esse pariatur?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptate voluptatum dignissimos ut fuga iste natus, totam et a beatae delectus aperiam omnis exercitationem numquam vel expedita alias consequatur quis.</p>
+                </div>
+            </section>
+            <section class="card-gostos">
+                <h2 class="card-gostos__titulo">Coisas que eu amo</h2>
+                <div class="container-listas">
+                    <div class="lista">
+                        <h3>Os países que quero conhecer:</h3>
+                        <ul class="lista__item">
+                            <li>Cuba </li>
+                            <li>Nigéria </li>
+                            <li>África do Sul </li>
+                            <li>Jamaica </li>
+                            <li>Egito </li>
+                            <li>Grécia </li>
+                        </ul>
+                    </div>
+                    <div class="lista">
+                        <h3>Minhas músicas favoritas:</h3>
+                        <ul class="lista__item">
+                            <li>BlackBird</li>
+                            <li>Andança</li>
+                            <li>Follow Rivers </li>
+                            <li>Ne me quitte pas</li>
+                            <li>One & Only </li>
+                            <li>Só você me faz sentir</li>
+                        </ul>
+                    </div>
+                    <div class="lista">
+                        <h3>Meus livros preferidos:</h3>
+                        <ul class="lista__item">
+                            <li>Mulheres, raça e classe</li>
+                            <li>Tomates verdes e fritos</li>
+                            <li>Torto Arado</li>
+                            <li>Olhos D'Água</li>
+                            <li>Garota, Mulher, Outras</li>
+                            <li>Pétala</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="card-fale-conosco" id="fale-conosco">
+                <h2>Fale conosco</h2>
+                <form>
+                    <div class="campo-form">
+                        <label for="nome">Nome completo</label>
+                    <input id="nome" type="text" name="Nome" placeholder="Digite o seu nome completo" required>
+
+                    <label for="idade">Qual a sua idade?</label>
+                    <input id="idade" type="number" name="Idade" min="0" max="120" value="0" required>
+
+                    <label for="email">Digite o seu e-mail</label>
+                    <input id="email" type="email" name="E-mail" placeholder="seuemail@dominio.com" required>
+
+                    <label for="telefone">Digite o seu telefone</label>
+                    <input id="telefone" type="tel" name="Telefone" placeholder="(XX) XXXXX-XXXX" required>
+                    
+                    <label for="mensagem">Digite a sua mensagem:</label>
+                    <textarea id="mensagem" name="Mensagem" placeholder="Digite a sua mensagem"></textarea>
+                    
+                    <label for="comidas">Qual a sua comida favorita?</label>
+                    <select name="comidas-que-eu-gosto" id="comidas">
+                        <option value="Coxinha">Coxinha</option>
+                        <option value="Sushi">Sushi</option>
+                        <option value="Chocolate">Chocolate</option>
+                    </select>
+                    </div>
+
+                    <fieldset>
+                        <legend>Como podemos entrar em contato com você?</legend>
+                    <input type="radio" value="whatsapp" name="contato" id="whatsapp"><label for="whatsapp">Whatsapp</label>
+                    <input type="radio" value="linkedin" name="contato"id="linkedin"><label for="linkedin">LinkedIn</label>
+                    <input type="radio" value="email1" name="contato" id="email1"><label for="email1">E-mail</label>
+                    </fieldset>
+
+                    <div>
+                        <input type="checkbox" checked><label for="">Concorda que você é maravilhosa?</label>
+                    </div>
+                    <div class="form-botao">
+                        <input type="submit" value="Enviar formulário">
+                    </div>
+
+                    
+                    
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Site desenvolvido por Elis Lages {Reprograma} | © Copyright 2021</p>
+        </footer>
+    </body>
+</html>
+
+<!-- Parei em 2:05:59 -->
